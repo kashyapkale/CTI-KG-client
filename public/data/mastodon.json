@@ -1,0 +1,659 @@
+{
+    "CTI": {
+        "text": "Mastodon, the free and open-source decentralized social networking platform, has fixed a critical vulnerability that allows attackers to impersonate and take over any remote account. The newly fixed flaw is tracked as CVE-2024-23832 and stems from insufficient origin validation in Mastodon, allowing attackers to impersonate users and take over their accounts. In July 2023, the Mastodon team fixed another critical bug tracked as CVE-2023-36460 and dubbed 'TootRoot,' which allowed attackers to send 'toots' (the equivalent of tweets) that would create web shells on target instances. Attackers could leverage this flaw to completely compromise Mastodon servers, allowing them to access sensitive user information, communications, and plant backdoors.",
+        "link": "computer.com/news/security/mastodon-vulnerability-allows-attackers-to-take-over-accounts/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Mastodon",
+                "relation": "fixed",
+                "object": "a critical vulnerability"
+            },
+            {
+                "subject": "a critical vulnerability",
+                "relation": "allows",
+                "object": "attackers to impersonate and take over any remote account"
+            },
+            {
+                "subject": "critical vulnerability",
+                "relation": "is tracked as",
+                "object": "CVE-2024-23832"
+            },
+            {
+                "subject": "CVE-2024-23832",
+                "relation": "stems from",
+                "object": "insufficient origin validation in Mastodon"
+            },
+            {
+                "subject": "attackers",
+                "relation": "could leverage",
+                "object": "CVE-2024-23832"
+            },
+            {
+                "subject": "Mastodon team",
+                "relation": "fixed",
+                "object": "critical bug CVE-2023-36460"
+            },
+            {
+                "subject": "CVE-2023-36460",
+                "relation": "is dubbed",
+                "object": "TootRoot"
+            },
+            {
+                "subject": "attackers",
+                "relation": "used",
+                "object": "CVE-2023-36460"
+            },
+            {
+                "subject": "CVE-2023-36460",
+                "relation": "allowed",
+                "object": "attackers to send toots that create web shells"
+            },
+            {
+                "subject": "attackers",
+                "relation": "could leverage",
+                "object": "CVE-2023-36460"
+            },
+            {
+                "subject": "CVE-2023-36460",
+                "relation": "allowed",
+                "object": "attackers to completely compromise Mastodon servers"
+            },
+            {
+                "subject": "attackers",
+                "relation": "could access",
+                "object": "sensitive user information"
+            },
+            {
+                "subject": "attackers",
+                "relation": "could access",
+                "object": "communications"
+            },
+            {
+                "subject": "attackers",
+                "relation": "could plant",
+                "object": "backdoors"
+            }
+        ],
+        "triples_count": 14
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Mastodon",
+                    "class": "Infrastructure"
+                },
+                "relation": "fixed",
+                "object": {
+                    "text": "a critical vulnerability",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "a critical vulnerability",
+                    "class": "Vulnerability"
+                },
+                "relation": "allows",
+                "object": {
+                    "text": "attackers to impersonate and take over any remote account",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "critical vulnerability",
+                    "class": "Vulnerability"
+                },
+                "relation": "is tracked as",
+                "object": {
+                    "text": "CVE-2024-23832",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2024-23832",
+                    "class": "Vulnerability"
+                },
+                "relation": "stems from",
+                "object": {
+                    "text": "insufficient origin validation in Mastodon",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "could leverage",
+                "object": {
+                    "text": "CVE-2024-23832",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Mastodon team",
+                    "class": "Organization"
+                },
+                "relation": "fixed",
+                "object": {
+                    "text": "critical bug CVE-2023-36460",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-36460",
+                    "class": "Vulnerability"
+                },
+                "relation": "is dubbed",
+                "object": {
+                    "text": "TootRoot",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "used",
+                "object": {
+                    "text": "CVE-2023-36460",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-36460",
+                    "class": "Vulnerability"
+                },
+                "relation": "allowed",
+                "object": {
+                    "text": "attackers to send toots that create web shells",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "could leverage",
+                "object": {
+                    "text": "CVE-2023-36460",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-36460",
+                    "class": "Vulnerability"
+                },
+                "relation": "allowed",
+                "object": {
+                    "text": "attackers to completely compromise Mastodon servers",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "could access",
+                "object": {
+                    "text": "sensitive user information",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "could access",
+                "object": {
+                    "text": "communications",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "could plant",
+                "object": {
+                    "text": "backdoors",
+                    "class": "Malware"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Mastodon",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Mastodon"
+                    ],
+                    "entity_text": "Mastodon"
+                },
+                "relation": "fixed",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "a critical vulnerability",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "a critical vulnerability",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                },
+                "relation": "allows",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "attackers to impersonate and take over any remote account",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "attackers to impersonate and take over any remote account"
+                    ],
+                    "entity_text": "attackers to impersonate and take over any remote account"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "critical vulnerability",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                },
+                "relation": "is tracked as",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "CVE-2024-23832",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "CVE-2024-23832"
+                    ],
+                    "entity_text": "CVE-2024-23832"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "CVE-2024-23832",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "CVE-2024-23832"
+                    ],
+                    "entity_text": "CVE-2024-23832"
+                },
+                "relation": "stems from",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "insufficient origin validation in Mastodon",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "insufficient origin validation in Mastodon"
+                    ],
+                    "entity_text": "insufficient origin validation in Mastodon"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "could leverage",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "CVE-2024-23832",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "CVE-2024-23832"
+                    ],
+                    "entity_text": "CVE-2024-23832"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "Mastodon team",
+                    "mention_class": "Organization",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "Mastodon team"
+                    ],
+                    "entity_text": "Mastodon team"
+                },
+                "relation": "fixed",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "critical bug CVE-2023-36460",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "CVE-2023-36460",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                },
+                "relation": "is dubbed",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "TootRoot",
+                    "mention_class": "Malware",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "TootRoot"
+                    ],
+                    "entity_text": "TootRoot"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "used",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "CVE-2023-36460",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": "CVE-2023-36460",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                },
+                "relation": "allowed",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "attackers to send toots that create web shells",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "attackers to send toots that create web shells"
+                    ],
+                    "entity_text": "attackers to send toots that create web shells"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "could leverage",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "CVE-2023-36460",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 20,
+                    "mention_text": "CVE-2023-36460",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vulnerability",
+                        "CVE-2023-36460",
+                        "a critical vulnerability",
+                        "critical bug CVE-2023-36460"
+                    ],
+                    "entity_text": "CVE-2023-36460"
+                },
+                "relation": "allowed",
+                "object": {
+                    "mention_id": 21,
+                    "mention_text": "attackers to completely compromise Mastodon servers",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "attackers to completely compromise Mastodon servers"
+                    ],
+                    "entity_text": "attackers to completely compromise Mastodon servers"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 22,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "could access",
+                "object": {
+                    "mention_id": 23,
+                    "mention_text": "sensitive user information",
+                    "mention_class": "Information",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "sensitive user information"
+                    ],
+                    "entity_text": "sensitive user information"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 24,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "could access",
+                "object": {
+                    "mention_id": 25,
+                    "mention_text": "communications",
+                    "mention_class": "Information",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "communications"
+                    ],
+                    "entity_text": "communications"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 26,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers",
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "could plant",
+                "object": {
+                    "mention_id": 27,
+                    "mention_text": "backdoors",
+                    "mention_class": "Malware",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "backdoors"
+                    ],
+                    "entity_text": "backdoors"
+                }
+            }
+        ],
+        "mentions_num": 28,
+        "entity_num": 13
+    },
+    "LP": {
+        "predicted_links": [],
+        "topic_node": {
+            "mention_id": 1,
+            "mention_text": "a critical vulnerability",
+            "mention_class": "Vulnerability",
+            "entity_id": 1,
+            "mentions_merged": [
+                "critical vulnerability",
+                "CVE-2023-36460",
+                "a critical vulnerability",
+                "critical bug CVE-2023-36460"
+            ],
+            "entity_text": "CVE-2023-36460"
+        },
+        "main_nodes": [],
+        "subgraphs": [
+            [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                5,
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        ],
+        "subgraph_num": 1
+    }
+}

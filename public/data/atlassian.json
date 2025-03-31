@@ -1,0 +1,329 @@
+{
+    "CTI": {
+        "text": "Security researchers are observing exploitation attempts for the CVE-2023-22527 remote code execution flaw vulnerability that affects outdated versions of Atlassian Confluence servers. The flaw has a critical severity score and is described as a template injection weakness that allows unauthenticated remote attackers to execute code on vulnerable Confluence Data Center and Confluence Server endpoints. The service says that attackers are trying out callbacks by executing the 'whoami' command to gather information about the level of access and privileges on the system.",
+        "link": "https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-atlassian-confluence-rce-flaw/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Attackers",
+                "relation": "are exploiting",
+                "object": "CVE-2023-22527"
+            },
+            {
+                "subject": "CVE-2023-22527",
+                "relation": "affects",
+                "object": "Atlassian Confluence servers"
+            },
+            {
+                "subject": "CVE-2023-22527",
+                "relation": "is described as",
+                "object": "a template injection weakness"
+            },
+            {
+                "subject": "Unauthenticated remote attackers",
+                "relation": "can execute",
+                "object": "code on vulnerable Confluence Data Center endpoints"
+            },
+            {
+                "subject": "Unauthenticated remote attackers",
+                "relation": "can execute",
+                "object": "code on vulnerable Confluence Server endpoints"
+            },
+            {
+                "subject": "Attackers",
+                "relation": "are executing",
+                "object": "'whoami' command"
+            }
+        ],
+        "triples_count": 6
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Attackers",
+                    "class": "Attacker"
+                },
+                "relation": "are exploiting",
+                "object": {
+                    "text": "CVE-2023-22527",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-22527",
+                    "class": "Vulnerability"
+                },
+                "relation": "affects",
+                "object": {
+                    "text": "Atlassian Confluence servers",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-22527",
+                    "class": "Vulnerability"
+                },
+                "relation": "is described as",
+                "object": {
+                    "text": "a template injection weakness",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Unauthenticated remote attackers",
+                    "class": "Attacker"
+                },
+                "relation": "can execute",
+                "object": {
+                    "text": "code on vulnerable Confluence Data Center endpoints",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Unauthenticated remote attackers",
+                    "class": "Attacker"
+                },
+                "relation": "can execute",
+                "object": {
+                    "text": "code on vulnerable Confluence Server endpoints",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Attackers",
+                    "class": "Attacker"
+                },
+                "relation": "are executing",
+                "object": {
+                    "text": "'whoami' command",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Attackers",
+                        "Attackers"
+                    ],
+                    "entity_text": "Attackers"
+                },
+                "relation": "are exploiting",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "CVE-2023-22527",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-22527",
+                        "CVE-2023-22527",
+                        "CVE-2023-22527"
+                    ],
+                    "entity_text": "CVE-2023-22527"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "CVE-2023-22527",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-22527",
+                        "CVE-2023-22527",
+                        "CVE-2023-22527"
+                    ],
+                    "entity_text": "CVE-2023-22527"
+                },
+                "relation": "affects",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "Atlassian Confluence servers",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "Atlassian Confluence servers"
+                    ],
+                    "entity_text": "Atlassian Confluence servers"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "CVE-2023-22527",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-22527",
+                        "CVE-2023-22527",
+                        "CVE-2023-22527"
+                    ],
+                    "entity_text": "CVE-2023-22527"
+                },
+                "relation": "is described as",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "a template injection weakness",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "a template injection weakness"
+                    ],
+                    "entity_text": "a template injection weakness"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "Unauthenticated remote attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "Unauthenticated remote attackers",
+                        "Unauthenticated remote attackers"
+                    ],
+                    "entity_text": "Unauthenticated remote attackers"
+                },
+                "relation": "can execute",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "code on vulnerable Confluence Data Center endpoints",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "code on vulnerable Confluence Server endpoints",
+                        "code on vulnerable Confluence Data Center endpoints"
+                    ],
+                    "entity_text": "code on vulnerable Confluence Server endpoints"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "Unauthenticated remote attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "Unauthenticated remote attackers",
+                        "Unauthenticated remote attackers"
+                    ],
+                    "entity_text": "Unauthenticated remote attackers"
+                },
+                "relation": "can execute",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "code on vulnerable Confluence Server endpoints",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "code on vulnerable Confluence Server endpoints",
+                        "code on vulnerable Confluence Data Center endpoints"
+                    ],
+                    "entity_text": "code on vulnerable Confluence Server endpoints"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "Attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Attackers",
+                        "Attackers"
+                    ],
+                    "entity_text": "Attackers"
+                },
+                "relation": "are executing",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "'whoami' command",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "'whoami' command"
+                    ],
+                    "entity_text": "'whoami' command"
+                }
+            }
+        ],
+        "mentions_num": 12,
+        "entity_num": 7
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "entity_id": 4,
+                    "mention_text": "Unauthenticated remote attackers"
+                },
+                "relation": "are exploiting",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "CVE-2023-22527",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-22527",
+                        "CVE-2023-22527",
+                        "CVE-2023-22527"
+                    ],
+                    "entity_text": "CVE-2023-22527"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 1,
+            "mention_text": "CVE-2023-22527",
+            "mention_class": "Vulnerability",
+            "entity_id": 1,
+            "mentions_merged": [
+                "CVE-2023-22527",
+                "CVE-2023-22527",
+                "CVE-2023-22527"
+            ],
+            "entity_text": "CVE-2023-22527"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 6,
+                "mention_text": "Unauthenticated remote attackers",
+                "mention_class": "Attacker",
+                "entity_id": 4,
+                "mentions_merged": [
+                    "Unauthenticated remote attackers",
+                    "Unauthenticated remote attackers"
+                ],
+                "entity_text": "Unauthenticated remote attackers"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                3,
+                6
+            ],
+            [
+                4,
+                5
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

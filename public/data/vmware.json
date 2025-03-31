@@ -1,0 +1,703 @@
+{
+    "CTI": {
+        "text": "A Chinese hacking group has been exploiting a critical vCenter Server vulnerability (CVE-2023-34048) as a zero-day since at least late 2021. The flaw was patched in October, with VMware confirming this Wednesday that it's aware of CVE-2023-34048 in-the-wild exploitation, although it didn't share any other details on the attacks. However, as security firm Mandiant revealed today, the vulnerability was used by the UNC3886 Chinese cyber espionage group as part of a previously reported campaign, exposed in June 2023. The cyberspies used it to breach their targets' vCenter servers and compromised credentials to deploy VirtualPita and VirtualPie backdoors on ESXi hosts via maliciously crafted vSphere Installation Bundles (VIBs). In the next stage, they exploited the CVE-2023-20867 VMware Tools authentication bypass flaw to escalate privileges, harvest files, and exfiltrate them from guest VMs.",
+        "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-exploit-vmware-bug-as-zero-day-for-two-years/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "A Chinese hacking group",
+                "relation": "exploiting",
+                "object": "critical vCenter Server vulnerability (CVE-2023-34048)"
+            },
+            {
+                "subject": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                "relation": "patched in",
+                "object": "October"
+            },
+            {
+                "subject": "VMware",
+                "relation": "aware of",
+                "object": "CVE-2023-34048 in-the-wild exploitation"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "used",
+                "object": "critical vCenter Server vulnerability (CVE-2023-34048)"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "exposed in",
+                "object": "June 2023"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "breached",
+                "object": "vCenter servers"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "compromised",
+                "object": "credentials"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "deployed",
+                "object": "VirtualPita backdoors"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "deployed",
+                "object": "VirtualPie backdoors"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "used",
+                "object": "maliciously crafted vSphere Installation Bundles (VIBs)"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "exploited",
+                "object": "CVE-2023-20867 VMware Tools authentication bypass flaw"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "harvested files from",
+                "object": "guest VMs"
+            },
+            {
+                "subject": "UNC3886",
+                "relation": "exfiltrated files from",
+                "object": "guest VMs"
+            }
+        ],
+        "triples_count": 13
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "A Chinese hacking group",
+                    "class": "Attacker"
+                },
+                "relation": "exploiting",
+                "object": {
+                    "text": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                    "class": "Vulnerability"
+                },
+                "relation": "patched in",
+                "object": {
+                    "text": "October",
+                    "class": "Time"
+                }
+            },
+            {
+                "subject": {
+                    "text": "VMware",
+                    "class": "Organization"
+                },
+                "relation": "aware of",
+                "object": {
+                    "text": "CVE-2023-34048 in-the-wild exploitation",
+                    "class": "Event"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "used",
+                "object": {
+                    "text": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "exposed in",
+                "object": {
+                    "text": "June 2023",
+                    "class": "Time"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "breached",
+                "object": {
+                    "text": "vCenter servers",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "compromised",
+                "object": {
+                    "text": "credentials",
+                    "class": "Credential"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "deployed",
+                "object": {
+                    "text": "VirtualPita backdoors",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "deployed",
+                "object": {
+                    "text": "VirtualPie backdoors",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "used",
+                "object": {
+                    "text": "maliciously crafted vSphere Installation Bundles (VIBs)",
+                    "class": "Malware Characteristic:Payload"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "exploited",
+                "object": {
+                    "text": "CVE-2023-20867 VMware Tools authentication bypass flaw",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "harvested files from",
+                "object": {
+                    "text": "guest VMs",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "UNC3886",
+                    "class": "Attacker"
+                },
+                "relation": "exfiltrated files from",
+                "object": {
+                    "text": "guest VMs",
+                    "class": "Infrastructure"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "A Chinese hacking group",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "A Chinese hacking group"
+                    ],
+                    "entity_text": "A Chinese hacking group"
+                },
+                "relation": "exploiting",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vCenter Server vulnerability (CVE-2023-34048)"
+                    ],
+                    "entity_text": "critical vCenter Server vulnerability (CVE-2023-34048)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vCenter Server vulnerability (CVE-2023-34048)"
+                    ],
+                    "entity_text": "critical vCenter Server vulnerability (CVE-2023-34048)"
+                },
+                "relation": "patched in",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "October",
+                    "mention_class": "Time",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "October"
+                    ],
+                    "entity_text": "October"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "VMware",
+                    "mention_class": "Organization",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "VMware"
+                    ],
+                    "entity_text": "VMware"
+                },
+                "relation": "aware of",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "CVE-2023-34048 in-the-wild exploitation",
+                    "mention_class": "Event",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "CVE-2023-34048 in-the-wild exploitation"
+                    ],
+                    "entity_text": "CVE-2023-34048 in-the-wild exploitation"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "used",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "critical vCenter Server vulnerability (CVE-2023-34048)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "critical vCenter Server vulnerability (CVE-2023-34048)"
+                    ],
+                    "entity_text": "critical vCenter Server vulnerability (CVE-2023-34048)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "exposed in",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "June 2023",
+                    "mention_class": "Time",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "June 2023"
+                    ],
+                    "entity_text": "June 2023"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "breached",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "vCenter servers",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "vCenter servers"
+                    ],
+                    "entity_text": "vCenter servers"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "compromised",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "credentials",
+                    "mention_class": "Credential",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "credentials"
+                    ],
+                    "entity_text": "credentials"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "deployed",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "VirtualPita backdoors",
+                    "mention_class": "Malware",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "VirtualPie backdoors",
+                        "VirtualPita backdoors"
+                    ],
+                    "entity_text": "VirtualPie backdoors"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "deployed",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "VirtualPie backdoors",
+                    "mention_class": "Malware",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "VirtualPie backdoors",
+                        "VirtualPita backdoors"
+                    ],
+                    "entity_text": "VirtualPie backdoors"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "used",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "maliciously crafted vSphere Installation Bundles (VIBs)",
+                    "mention_class": "Malware Characteristic:Payload",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "maliciously crafted vSphere Installation Bundles (VIBs)"
+                    ],
+                    "entity_text": "maliciously crafted vSphere Installation Bundles (VIBs)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 20,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "exploited",
+                "object": {
+                    "mention_id": 21,
+                    "mention_text": "CVE-2023-20867 VMware Tools authentication bypass flaw",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "CVE-2023-20867 VMware Tools authentication bypass flaw"
+                    ],
+                    "entity_text": "CVE-2023-20867 VMware Tools authentication bypass flaw"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 22,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "harvested files from",
+                "object": {
+                    "mention_id": 23,
+                    "mention_text": "guest VMs",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "guest VMs",
+                        "guest VMs"
+                    ],
+                    "entity_text": "guest VMs"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 24,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "exfiltrated files from",
+                "object": {
+                    "mention_id": 25,
+                    "mention_text": "guest VMs",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "guest VMs",
+                        "guest VMs"
+                    ],
+                    "entity_text": "guest VMs"
+                }
+            }
+        ],
+        "mentions_num": 26,
+        "entity_num": 13
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "UNC3886",
+                    "mention_class": "Attacker",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886",
+                        "UNC3886"
+                    ],
+                    "entity_text": "UNC3886"
+                },
+                "relation": "exploited vulnerability in product of",
+                "object": {
+                    "entity_id": 3,
+                    "mention_text": "VMware"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 6,
+            "mention_text": "UNC3886",
+            "mention_class": "Attacker",
+            "entity_id": 5,
+            "mentions_merged": [
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886",
+                "UNC3886"
+            ],
+            "entity_text": "UNC3886"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 4,
+                "mention_text": "VMware",
+                "mention_class": "Organization",
+                "entity_id": 3,
+                "mentions_merged": [
+                    "VMware"
+                ],
+                "entity_text": "VMware"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ],
+            [
+                3,
+                4
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

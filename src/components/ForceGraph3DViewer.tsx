@@ -1,76 +1,88 @@
-'use client'
-import { useEffect, useRef } from 'react'
-import SpriteText from 'three-spritetext'
-import ForceGraph3D from '3d-force-graph'
+'use client';
+import {
+    useRef,
+    useImperativeHandle,
+    forwardRef,
+    useEffect,
+    Ref,
+} from 'react';
+import ForceGraph3D, { ForceGraph3DInstance } from '3d-force-graph';
+import SpriteText from 'three-spritetext';
 
-// Node and Link types for clarity
 type Node = {
-    id: string
-    class: string
-}
+    id: string;
+    class: string;
+    x?: number;
+    y?: number;
+    z?: number;
+};
 
 type Link = {
-    source: string
-    target: string
-    label: string
-}
+    source: string;
+    target: string;
+    label: string;
+};
+
+export type GraphViewerRef = {
+    focusOnNode: (id: string) => void;
+};
 
 type Props = {
-    nodes: Node[]
-    links: Link[]
-}
+    nodes: Node[];
+    links: Link[];
+};
 
-export default function ForceGraph3DViewer({ nodes, links }: Props) {
-    const containerRef = useRef<HTMLDivElement>(null)
+const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
+    ({ nodes, links }, ref: Ref<GraphViewerRef>) => {
+        const containerRef = useRef<HTMLDivElement>(null);
+        // This is the ref for the actual ForceGraph3D instance:
+        const forceGraphInstanceRef = useRef<ForceGraph3DInstance | null>(null);
 
-    useEffect(() => {
-        if (!containerRef.current) return
+        useEffect(() => {
+            if (!containerRef.current) return;
 
-        const container = containerRef.current
+            // @ts-expect-error ForceGraph3D has a callable signature not fully typed
+            forceGraphInstanceRef.current = ForceGraph3D()(containerRef.current)
+                .graphData({ nodes, links })
+                .nodeAutoColorBy('class')
+                .linkLabel((link: Link) => link.label)
+                .linkDirectionalArrowLength(3)
+                .linkDirectionalArrowRelPos(1)
+                .linkOpacity(0.6)
+                .linkWidth(1)
+                .nodeThreeObject((node: Node) => {
+                    const sprite = new SpriteText(node.id);
+                    sprite.color = 'white';
+                    sprite.textHeight = 6;
+                    return sprite;
+                });
+        }, [nodes, links]);
 
-        // Fix TS: safely cast to avoid TS2348 error
-        const createForceGraph = ForceGraph3D as any
+        useImperativeHandle(ref, () => ({
+            focusOnNode: (id: string) => {
+                const node = nodes.find((n) => n.id === id);
+                if (!node || !forceGraphInstanceRef.current) return;
 
-        const Graph = createForceGraph()(container)
-            .graphData({ nodes, links })
-            .nodeAutoColorBy('class')
-            .linkLabel((link: any) => link.label)
-            .linkDirectionalArrowLength(3)
-            .linkDirectionalArrowRelPos(1)
-            .linkOpacity(0.6)
-            .linkWidth(1)
-            .nodeThreeObject((node: any) => {
-                const sprite = new SpriteText(node.id)
-                sprite.color = 'white'
-                sprite.textHeight = 6
-                return sprite
-            })
-            .onNodeClick((node: any) => {
-                const distance = 120
+                // Adjust distance and camera as needed
+                const distance = 120;
                 const distRatio =
-                    1 + distance / Math.hypot(node.x || 0, node.y || 0, node.z || 0)
+                    1 + distance / Math.hypot(node.x ?? 0, node.y ?? 0, node.z ?? 0);
 
-                Graph.cameraPosition(
+                forceGraphInstanceRef.current.cameraPosition(
                     {
-                        x: (node.x || 0) * distRatio,
-                        y: (node.y || 0) * distRatio,
-                        z: (node.z || 0) * distRatio,
+                        x: (node.x ?? 0) * distRatio,
+                        y: (node.y ?? 0) * distRatio,
+                        z: (node.z ?? 0) * distRatio,
                     },
-                    node,
+                    { x: node.x ?? 0, y: node.y ?? 0, z: node.z ?? 0 },
                     3000
-                )
-            })
+                );
+            },
+        }));
 
-        // Cleanup: clear container on unmount
-        return () => {
-            container.innerHTML = ''
-        }
-    }, [nodes, links])
+        return <div ref={containerRef} className="w-full h-[600px] bg-black" />;
+    }
+);
 
-    return (
-        <div
-            ref={containerRef}
-            className="w-full h-[600px] border rounded shadow-inner bg-black"
-        />
-    )
-}
+ForceGraph3DViewer.displayName = 'ForceGraph3DViewer';
+export default ForceGraph3DViewer;

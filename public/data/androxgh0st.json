@@ -1,0 +1,738 @@
+{
+    "CTI": {
+        "text": "CISA and the FBI warned today that threat actors using Androxgh0st malware are building a botnet focused on cloud credential theft and using the stolen information to deliver additional malicious payloads. It scans for websites and servers vulnerable to the following remote code execution (RCE) vulnerabilities: CVE-2017-9841 (PHPUnit unit testing framework), CVE-2021-41773 (Apache HTTP Server), and CVE-2018-15133 (Laravel PHP web framework). Androxgh0st is a Python-scripted malware primarily used to target .env files that contain confidential information, such as credentials for various high profile applications, i.e., Amazon Web Services [AWS], Microsoft Office 365, SendGrid, and Twilio from the Laravel web application framework. Androxgh0st malware also supports numerous functions capable of abusing the Simple Mail Transfer Protocol (SMTP), such as scanning and exploiting exposed credentials and application programming interfaces (APIs), and web shell deployment. Stolen Twilio and SendGrid credentials can be used by the threat actors to conduct spam campaigns impersonating the breached companies.",
+        "link": "https://www.bleepingcomputer.com/news/security/fbi-androxgh0st-malware-botnet-steals-aws-microsoft-credentials/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Threat actors",
+                "relation": "are using",
+                "object": "Androxgh0st malware"
+            },
+            {
+                "subject": "Androxgh0st malware",
+                "relation": "is building",
+                "object": "a botnet"
+            },
+            {
+                "subject": "a botnet",
+                "relation": "is focused on",
+                "object": "cloud credential theft"
+            },
+            {
+                "subject": "Androxgh0st malware",
+                "relation": "scans for",
+                "object": "websites and servers vulnerable to remote code execution (RCE) vulnerabilities"
+            },
+            {
+                "subject": "remote code execution (RCE) vulnerabilities",
+                "relation": "include",
+                "object": "CVE-2017-9841"
+            },
+            {
+                "subject": "remote code execution (RCE) vulnerabilities",
+                "relation": "include",
+                "object": "CVE-2021-41773"
+            },
+            {
+                "subject": "remote code execution (RCE) vulnerabilities",
+                "relation": "include",
+                "object": "CVE-2018-15133"
+            },
+            {
+                "subject": "Androxgh0st malware",
+                "relation": "targets",
+                "object": ".env files"
+            },
+            {
+                "subject": ".env files",
+                "relation": "contain",
+                "object": "credentials for Amazon Web Services [AWS]"
+            },
+            {
+                "subject": ".env files",
+                "relation": "contain",
+                "object": "credentials for Microsoft Office 365"
+            },
+            {
+                "subject": ".env files",
+                "relation": "contain",
+                "object": "credentials for SendGrid"
+            },
+            {
+                "subject": ".env files",
+                "relation": "contain",
+                "object": "credentials for Twilio"
+            },
+            {
+                "subject": "Androxgh0st malware",
+                "relation": "supports",
+                "object": "functions capable of abusing the Simple Mail Transfer Protocol (SMTP)"
+            },
+            {
+                "subject": "threat actors",
+                "relation": "use stolen Twilio credentials for",
+                "object": "spam campaigns impersonating breached companies"
+            },
+            {
+                "subject": "threat actors",
+                "relation": "use stolen SendGrid credentials for",
+                "object": "spam campaigns impersonating breached companies"
+            }
+        ],
+        "triples_count": 15
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Threat actors",
+                    "class": "Attacker"
+                },
+                "relation": "are using",
+                "object": {
+                    "text": "Androxgh0st malware",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Androxgh0st malware",
+                    "class": "Malware"
+                },
+                "relation": "is building",
+                "object": {
+                    "text": "a botnet",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "a botnet",
+                    "class": "Infrastructure"
+                },
+                "relation": "is focused on",
+                "object": {
+                    "text": "cloud credential theft",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Androxgh0st malware",
+                    "class": "Malware"
+                },
+                "relation": "scans for",
+                "object": {
+                    "text": "websites and servers vulnerable to remote code execution (RCE) vulnerabilities",
+                    "class": "Exploit Target"
+                }
+            },
+            {
+                "subject": {
+                    "text": "remote code execution (RCE) vulnerabilities",
+                    "class": "Vulnerability"
+                },
+                "relation": "include",
+                "object": {
+                    "text": "CVE-2017-9841",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "remote code execution (RCE) vulnerabilities",
+                    "class": "Vulnerability"
+                },
+                "relation": "include",
+                "object": {
+                    "text": "CVE-2021-41773",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "remote code execution (RCE) vulnerabilities",
+                    "class": "Vulnerability"
+                },
+                "relation": "include",
+                "object": {
+                    "text": "CVE-2018-15133",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Androxgh0st malware",
+                    "class": "Malware"
+                },
+                "relation": "targets",
+                "object": {
+                    "text": ".env files",
+                    "class": "Indicator:File"
+                }
+            },
+            {
+                "subject": {
+                    "text": ".env files",
+                    "class": "Indicator:File"
+                },
+                "relation": "contain",
+                "object": {
+                    "text": "credentials for Amazon Web Services [AWS]",
+                    "class": "Credential"
+                }
+            },
+            {
+                "subject": {
+                    "text": ".env files",
+                    "class": "Indicator:File"
+                },
+                "relation": "contain",
+                "object": {
+                    "text": "credentials for Microsoft Office 365",
+                    "class": "Credential"
+                }
+            },
+            {
+                "subject": {
+                    "text": ".env files",
+                    "class": "Indicator:File"
+                },
+                "relation": "contain",
+                "object": {
+                    "text": "credentials for SendGrid",
+                    "class": "Credential"
+                }
+            },
+            {
+                "subject": {
+                    "text": ".env files",
+                    "class": "Indicator:File"
+                },
+                "relation": "contain",
+                "object": {
+                    "text": "credentials for Twilio",
+                    "class": "Credential"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Androxgh0st malware",
+                    "class": "Malware"
+                },
+                "relation": "supports",
+                "object": {
+                    "text": "functions capable of abusing the Simple Mail Transfer Protocol (SMTP)",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "threat actors",
+                    "class": "Attacker"
+                },
+                "relation": "use stolen Twilio credentials for",
+                "object": {
+                    "text": "spam campaigns impersonating breached companies",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            },
+            {
+                "subject": {
+                    "text": "threat actors",
+                    "class": "Attacker"
+                },
+                "relation": "use stolen SendGrid credentials for",
+                "object": {
+                    "text": "spam campaigns impersonating breached companies",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Threat actors",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Threat actors",
+                        "threat actors",
+                        "threat actors"
+                    ],
+                    "entity_text": "threat actors"
+                },
+                "relation": "are using",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "Androxgh0st malware",
+                    "mention_class": "Malware",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware"
+                    ],
+                    "entity_text": "Androxgh0st malware"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "Androxgh0st malware",
+                    "mention_class": "Malware",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware"
+                    ],
+                    "entity_text": "Androxgh0st malware"
+                },
+                "relation": "is building",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "a botnet",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "a botnet",
+                        "a botnet"
+                    ],
+                    "entity_text": "a botnet"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "a botnet",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "a botnet",
+                        "a botnet"
+                    ],
+                    "entity_text": "a botnet"
+                },
+                "relation": "is focused on",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "cloud credential theft",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "cloud credential theft"
+                    ],
+                    "entity_text": "cloud credential theft"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "Androxgh0st malware",
+                    "mention_class": "Malware",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware"
+                    ],
+                    "entity_text": "Androxgh0st malware"
+                },
+                "relation": "scans for",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "websites and servers vulnerable to remote code execution (RCE) vulnerabilities",
+                    "mention_class": "Exploit Target",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "websites and servers vulnerable to remote code execution (RCE) vulnerabilities"
+                    ],
+                    "entity_text": "websites and servers vulnerable to remote code execution (RCE) vulnerabilities"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "remote code execution (RCE) vulnerabilities",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "remote code execution (RCE) vulnerabilities",
+                        "remote code execution (RCE) vulnerabilities",
+                        "remote code execution (RCE) vulnerabilities"
+                    ],
+                    "entity_text": "remote code execution (RCE) vulnerabilities"
+                },
+                "relation": "include",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "CVE-2017-9841",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "CVE-2017-9841"
+                    ],
+                    "entity_text": "CVE-2017-9841"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "remote code execution (RCE) vulnerabilities",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "remote code execution (RCE) vulnerabilities",
+                        "remote code execution (RCE) vulnerabilities",
+                        "remote code execution (RCE) vulnerabilities"
+                    ],
+                    "entity_text": "remote code execution (RCE) vulnerabilities"
+                },
+                "relation": "include",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "CVE-2021-41773",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "CVE-2021-41773"
+                    ],
+                    "entity_text": "CVE-2021-41773"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "remote code execution (RCE) vulnerabilities",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "remote code execution (RCE) vulnerabilities",
+                        "remote code execution (RCE) vulnerabilities",
+                        "remote code execution (RCE) vulnerabilities"
+                    ],
+                    "entity_text": "remote code execution (RCE) vulnerabilities"
+                },
+                "relation": "include",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "CVE-2018-15133",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "CVE-2018-15133"
+                    ],
+                    "entity_text": "CVE-2018-15133"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "Androxgh0st malware",
+                    "mention_class": "Malware",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware"
+                    ],
+                    "entity_text": "Androxgh0st malware"
+                },
+                "relation": "targets",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": ".env files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files"
+                    ],
+                    "entity_text": ".env files"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": ".env files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files"
+                    ],
+                    "entity_text": ".env files"
+                },
+                "relation": "contain",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "credentials for Amazon Web Services [AWS]",
+                    "mention_class": "Credential",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "credentials for Amazon Web Services [AWS]"
+                    ],
+                    "entity_text": "credentials for Amazon Web Services [AWS]"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": ".env files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files"
+                    ],
+                    "entity_text": ".env files"
+                },
+                "relation": "contain",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "credentials for Microsoft Office 365",
+                    "mention_class": "Credential",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "credentials for Microsoft Office 365"
+                    ],
+                    "entity_text": "credentials for Microsoft Office 365"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 20,
+                    "mention_text": ".env files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files"
+                    ],
+                    "entity_text": ".env files"
+                },
+                "relation": "contain",
+                "object": {
+                    "mention_id": 21,
+                    "mention_text": "credentials for SendGrid",
+                    "mention_class": "Credential",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "credentials for SendGrid"
+                    ],
+                    "entity_text": "credentials for SendGrid"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 22,
+                    "mention_text": ".env files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files",
+                        ".env files"
+                    ],
+                    "entity_text": ".env files"
+                },
+                "relation": "contain",
+                "object": {
+                    "mention_id": 23,
+                    "mention_text": "credentials for Twilio",
+                    "mention_class": "Credential",
+                    "entity_id": 13,
+                    "mentions_merged": [
+                        "credentials for Twilio"
+                    ],
+                    "entity_text": "credentials for Twilio"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 24,
+                    "mention_text": "Androxgh0st malware",
+                    "mention_class": "Malware",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware"
+                    ],
+                    "entity_text": "Androxgh0st malware"
+                },
+                "relation": "supports",
+                "object": {
+                    "mention_id": 25,
+                    "mention_text": "functions capable of abusing the Simple Mail Transfer Protocol (SMTP)",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 14,
+                    "mentions_merged": [
+                        "functions capable of abusing the Simple Mail Transfer Protocol (SMTP)"
+                    ],
+                    "entity_text": "functions capable of abusing the Simple Mail Transfer Protocol (SMTP)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 26,
+                    "mention_text": "threat actors",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Threat actors",
+                        "threat actors",
+                        "threat actors"
+                    ],
+                    "entity_text": "threat actors"
+                },
+                "relation": "use stolen Twilio credentials for",
+                "object": {
+                    "mention_id": 27,
+                    "mention_text": "spam campaigns impersonating breached companies",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 15,
+                    "mentions_merged": [
+                        "spam campaigns impersonating breached companies",
+                        "spam campaigns impersonating breached companies"
+                    ],
+                    "entity_text": "spam campaigns impersonating breached companies"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 28,
+                    "mention_text": "threat actors",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Threat actors",
+                        "threat actors",
+                        "threat actors"
+                    ],
+                    "entity_text": "threat actors"
+                },
+                "relation": "use stolen SendGrid credentials for",
+                "object": {
+                    "mention_id": 29,
+                    "mention_text": "spam campaigns impersonating breached companies",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 15,
+                    "mentions_merged": [
+                        "spam campaigns impersonating breached companies",
+                        "spam campaigns impersonating breached companies"
+                    ],
+                    "entity_text": "spam campaigns impersonating breached companies"
+                }
+            }
+        ],
+        "mentions_num": 30,
+        "entity_num": 16
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "mention_id": 1,
+                    "mention_text": "Androxgh0st malware",
+                    "mention_class": "Malware",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware",
+                        "Androxgh0st malware"
+                    ],
+                    "entity_text": "Androxgh0st malware"
+                },
+                "relation": "scans for and exploits",
+                "object": {
+                    "entity_id": 5,
+                    "mention_text": "remote code execution (RCE) vulnerabilities"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 1,
+            "mention_text": "Androxgh0st malware",
+            "mention_class": "Malware",
+            "entity_id": 1,
+            "mentions_merged": [
+                "Androxgh0st malware",
+                "Androxgh0st malware",
+                "Androxgh0st malware",
+                "Androxgh0st malware",
+                "Androxgh0st malware"
+            ],
+            "entity_text": "Androxgh0st malware"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 8,
+                "mention_text": "remote code execution (RCE) vulnerabilities",
+                "mention_class": "Vulnerability",
+                "entity_id": 5,
+                "mentions_merged": [
+                    "remote code execution (RCE) vulnerabilities",
+                    "remote code execution (RCE) vulnerabilities",
+                    "remote code execution (RCE) vulnerabilities"
+                ],
+                "entity_text": "remote code execution (RCE) vulnerabilities"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+            ],
+            [
+                6,
+                7,
+                8,
+                5
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

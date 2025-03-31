@@ -1,0 +1,377 @@
+{
+    "CTI": {
+        "text": "Over 5,300 internet-exposed GitLab instances are vulnerable to CVE-2023-7028, a zero-click account takeover flaw GitLab warned about earlier this month. The critical (CVSS score: 10.0) flaw allows attackers to send password reset emails for a targeted account to an attacker-controlled email address, allowing the threat actor to change the password and take over the account. Based on GitLab's role as a software development and project planning platform and the type and severity of the flaw, these servers are at risk of supply chain attacks, proprietary code disclosure, API key leaks, and other malicious activity.",
+        "link": "https://www.bleepingcomputer.com/news/security/over-5-300-gitlab-servers-exposed-to-zero-click-account-takeover-attacks/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "GitLab instances",
+                "relation": "are vulnerable to",
+                "object": "CVE-2023-7028"
+            },
+            {
+                "subject": "CVE-2023-7028",
+                "relation": "is rated",
+                "object": "critical (CVSS score: 10.0)"
+            },
+            {
+                "subject": "CVE-2023-7028",
+                "relation": "allows",
+                "object": "attackers to send password reset emails for a targeted account to an attacker-controlled email address"
+            },
+            {
+                "subject": "attackers",
+                "relation": "can take over",
+                "object": "the targeted account"
+            },
+            {
+                "subject": "GitLab instances",
+                "relation": "are at risk of",
+                "object": "supply chain attacks"
+            },
+            {
+                "subject": "GitLab instances",
+                "relation": "are at risk of",
+                "object": "proprietary code disclosure"
+            },
+            {
+                "subject": "GitLab instances",
+                "relation": "are at risk of",
+                "object": "API key leaks"
+            }
+        ],
+        "triples_count": 7
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "GitLab instances",
+                    "class": "Infrastructure"
+                },
+                "relation": "are vulnerable to",
+                "object": {
+                    "text": "CVE-2023-7028",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-7028",
+                    "class": "Vulnerability"
+                },
+                "relation": "is rated",
+                "object": {
+                    "text": "critical (CVSS score: 10.0)",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-7028",
+                    "class": "Vulnerability"
+                },
+                "relation": "allows",
+                "object": {
+                    "text": "attackers to send password reset emails for a targeted account to an attacker-controlled email address",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "can take over",
+                "object": {
+                    "text": "the targeted account",
+                    "class": "Account"
+                }
+            },
+            {
+                "subject": {
+                    "text": "GitLab instances",
+                    "class": "Infrastructure"
+                },
+                "relation": "are at risk of",
+                "object": {
+                    "text": "supply chain attacks",
+                    "class": "Event"
+                }
+            },
+            {
+                "subject": {
+                    "text": "GitLab instances",
+                    "class": "Infrastructure"
+                },
+                "relation": "are at risk of",
+                "object": {
+                    "text": "proprietary code disclosure",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "GitLab instances",
+                    "class": "Infrastructure"
+                },
+                "relation": "are at risk of",
+                "object": {
+                    "text": "API key leaks",
+                    "class": "Credential"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "GitLab instances",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances"
+                    ],
+                    "entity_text": "GitLab instances"
+                },
+                "relation": "are vulnerable to",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "CVE-2023-7028",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-7028",
+                        "CVE-2023-7028",
+                        "CVE-2023-7028"
+                    ],
+                    "entity_text": "CVE-2023-7028"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "CVE-2023-7028",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-7028",
+                        "CVE-2023-7028",
+                        "CVE-2023-7028"
+                    ],
+                    "entity_text": "CVE-2023-7028"
+                },
+                "relation": "is rated",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "critical (CVSS score: 10.0)",
+                    "mention_class": "Information",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "critical (CVSS score: 10.0)"
+                    ],
+                    "entity_text": "critical (CVSS score: 10.0)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "CVE-2023-7028",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2023-7028",
+                        "CVE-2023-7028",
+                        "CVE-2023-7028"
+                    ],
+                    "entity_text": "CVE-2023-7028"
+                },
+                "relation": "allows",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "attackers to send password reset emails for a targeted account to an attacker-controlled email address",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "attackers to send password reset emails for a targeted account to an attacker-controlled email address"
+                    ],
+                    "entity_text": "attackers to send password reset emails for a targeted account to an attacker-controlled email address"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "can take over",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "the targeted account",
+                    "mention_class": "Account",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "the targeted account"
+                    ],
+                    "entity_text": "the targeted account"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "GitLab instances",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances"
+                    ],
+                    "entity_text": "GitLab instances"
+                },
+                "relation": "are at risk of",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "supply chain attacks",
+                    "mention_class": "Event",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "supply chain attacks"
+                    ],
+                    "entity_text": "supply chain attacks"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "GitLab instances",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances"
+                    ],
+                    "entity_text": "GitLab instances"
+                },
+                "relation": "are at risk of",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "proprietary code disclosure",
+                    "mention_class": "Information",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "proprietary code disclosure"
+                    ],
+                    "entity_text": "proprietary code disclosure"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "GitLab instances",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances"
+                    ],
+                    "entity_text": "GitLab instances"
+                },
+                "relation": "are at risk of",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "API key leaks",
+                    "mention_class": "Credential",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "API key leaks"
+                    ],
+                    "entity_text": "API key leaks"
+                }
+            }
+        ],
+        "mentions_num": 14,
+        "entity_num": 9
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "entity_id": 5,
+                    "mention_text": "the targeted account"
+                },
+                "relation": "exists on",
+                "object": {
+                    "mention_id": 0,
+                    "mention_text": "GitLab instances",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances",
+                        "GitLab instances"
+                    ],
+                    "entity_text": "GitLab instances"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 0,
+            "mention_text": "GitLab instances",
+            "mention_class": "Infrastructure",
+            "entity_id": 0,
+            "mentions_merged": [
+                "GitLab instances",
+                "GitLab instances",
+                "GitLab instances",
+                "GitLab instances"
+            ],
+            "entity_text": "GitLab instances"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 7,
+                "mention_text": "the targeted account",
+                "mention_class": "Account",
+                "entity_id": 5,
+                "mentions_merged": [
+                    "the targeted account"
+                ],
+                "entity_text": "the targeted account"
+            }
+        ],
+        "subgraphs": [
+            [
+                3,
+                6,
+                7,
+                8,
+                0,
+                1,
+                2
+            ],
+            [
+                5,
+                4
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

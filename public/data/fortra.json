@@ -1,0 +1,975 @@
+{
+    "CTI": {
+        "text": "In early 2023, it was revealed that the Clop ransomware gang had breached 130 companies and organizations by leveraging a critical remote code execution flaw in GoAnywhere MFT. The flaw is tracked as CVE-2023-0669 and had been exploited as a zero-day vulnerability since January 18, 2023. Fortra discovered its exploitation on February 3, 2023, and released patches three days later. Unfortunately, the damage had already been done, with Clop conducting widespread data theft attacks that impacted organizations worldwide, causing data leaks, reputational damage, and operational disruptions. Some notable victims of those attacks include Crown Resorts, CHS, Hatch Bank, Rubrik, the City of Toronto, Hitachi Energy, Procter & Gamble, and Saks Fifth Avenue.",
+        "link": "https://www.bleepingcomputer.com/news/security/fortra-warns-of-new-critical-goanywhere-mft-auth-bypass-patch-now/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "breached",
+                "object": "130 companies and organizations"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "leveraged",
+                "object": "critical remote code execution flaw in GoAnywhere MFT"
+            },
+            {
+                "subject": "critical remote code execution flaw in GoAnywhere MFT",
+                "relation": "is tracked as",
+                "object": "CVE-2023-0669"
+            },
+            {
+                "subject": "CVE-2023-0669",
+                "relation": "had been exploited since",
+                "object": "January 18, 2023"
+            },
+            {
+                "subject": "Fortra",
+                "relation": "discovered exploitation of",
+                "object": "CVE-2023-0669"
+            },
+            {
+                "subject": "Fortra",
+                "relation": "released patches at",
+                "object": "February 6, 2023"
+            },
+            {
+                "subject": "Clop",
+                "relation": "conducted",
+                "object": "widespread data theft attacks"
+            },
+            {
+                "subject": "widespread data theft attacks",
+                "relation": "impacted",
+                "object": "organizations worldwide"
+            },
+            {
+                "subject": "widespread data theft attacks",
+                "relation": "caused",
+                "object": "data leaks"
+            },
+            {
+                "subject": "widespread data theft attacks",
+                "relation": "caused",
+                "object": "reputational damage"
+            },
+            {
+                "subject": "widespread data theft attacks",
+                "relation": "caused",
+                "object": "operational disruptions"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "Crown Resorts"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "CHS"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "Hatch Bank"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "Rubrik"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "the City of Toronto"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "Hitachi Energy"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "Procter & Gamble"
+            },
+            {
+                "subject": "Clop ransomware gang",
+                "relation": "attacked",
+                "object": "Saks Fifth Avenue"
+            }
+        ],
+        "triples_count": 19
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "breached",
+                "object": {
+                    "text": "130 companies and organizations",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "leveraged",
+                "object": {
+                    "text": "critical remote code execution flaw in GoAnywhere MFT",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "critical remote code execution flaw in GoAnywhere MFT",
+                    "class": "Vulnerability"
+                },
+                "relation": "is tracked as",
+                "object": {
+                    "text": "CVE-2023-0669",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-0669",
+                    "class": "Vulnerability"
+                },
+                "relation": "had been exploited since",
+                "object": {
+                    "text": "January 18, 2023",
+                    "class": "Time"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Fortra",
+                    "class": "Organization"
+                },
+                "relation": "discovered exploitation of",
+                "object": {
+                    "text": "CVE-2023-0669",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Fortra",
+                    "class": "Organization"
+                },
+                "relation": "released patches at",
+                "object": {
+                    "text": "February 6, 2023",
+                    "class": "Time"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop",
+                    "class": "Attacker"
+                },
+                "relation": "conducted",
+                "object": {
+                    "text": "widespread data theft attacks",
+                    "class": "Event"
+                }
+            },
+            {
+                "subject": {
+                    "text": "widespread data theft attacks",
+                    "class": "Event"
+                },
+                "relation": "impacted",
+                "object": {
+                    "text": "organizations worldwide",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "widespread data theft attacks",
+                    "class": "Event"
+                },
+                "relation": "caused",
+                "object": {
+                    "text": "data leaks",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "widespread data theft attacks",
+                    "class": "Event"
+                },
+                "relation": "caused",
+                "object": {
+                    "text": "reputational damage",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "widespread data theft attacks",
+                    "class": "Event"
+                },
+                "relation": "caused",
+                "object": {
+                    "text": "operational disruptions",
+                    "class": "Event"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "Crown Resorts",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "CHS",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "Hatch Bank",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "Rubrik",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "the City of Toronto",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "Hitachi Energy",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "Procter & Gamble",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Clop ransomware gang",
+                    "class": "Attacker"
+                },
+                "relation": "attacked",
+                "object": {
+                    "text": "Saks Fifth Avenue",
+                    "class": "Organization"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "breached",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "130 companies and organizations",
+                    "mention_class": "Organization",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "130 companies and organizations"
+                    ],
+                    "entity_text": "130 companies and organizations"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "leveraged",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "critical remote code execution flaw in GoAnywhere MFT",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "critical remote code execution flaw in GoAnywhere MFT",
+                        "critical remote code execution flaw in GoAnywhere MFT"
+                    ],
+                    "entity_text": "critical remote code execution flaw in GoAnywhere MFT"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "critical remote code execution flaw in GoAnywhere MFT",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "critical remote code execution flaw in GoAnywhere MFT",
+                        "critical remote code execution flaw in GoAnywhere MFT"
+                    ],
+                    "entity_text": "critical remote code execution flaw in GoAnywhere MFT"
+                },
+                "relation": "is tracked as",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "CVE-2023-0669",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "CVE-2023-0669",
+                        "CVE-2023-0669",
+                        "CVE-2023-0669"
+                    ],
+                    "entity_text": "CVE-2023-0669"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "CVE-2023-0669",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "CVE-2023-0669",
+                        "CVE-2023-0669",
+                        "CVE-2023-0669"
+                    ],
+                    "entity_text": "CVE-2023-0669"
+                },
+                "relation": "had been exploited since",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "January 18, 2023",
+                    "mention_class": "Time",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "January 18, 2023"
+                    ],
+                    "entity_text": "January 18, 2023"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "Fortra",
+                    "mention_class": "Organization",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "Fortra",
+                        "Fortra"
+                    ],
+                    "entity_text": "Fortra"
+                },
+                "relation": "discovered exploitation of",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "CVE-2023-0669",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "CVE-2023-0669",
+                        "CVE-2023-0669",
+                        "CVE-2023-0669"
+                    ],
+                    "entity_text": "CVE-2023-0669"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "Fortra",
+                    "mention_class": "Organization",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "Fortra",
+                        "Fortra"
+                    ],
+                    "entity_text": "Fortra"
+                },
+                "relation": "released patches at",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "February 6, 2023",
+                    "mention_class": "Time",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "February 6, 2023"
+                    ],
+                    "entity_text": "February 6, 2023"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "Clop",
+                    "mention_class": "Attacker",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "Clop"
+                    ],
+                    "entity_text": "Clop"
+                },
+                "relation": "conducted",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "widespread data theft attacks",
+                    "mention_class": "Event",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks"
+                    ],
+                    "entity_text": "widespread data theft attacks"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "widespread data theft attacks",
+                    "mention_class": "Event",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks"
+                    ],
+                    "entity_text": "widespread data theft attacks"
+                },
+                "relation": "impacted",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "organizations worldwide",
+                    "mention_class": "Organization",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "organizations worldwide"
+                    ],
+                    "entity_text": "organizations worldwide"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": "widespread data theft attacks",
+                    "mention_class": "Event",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks"
+                    ],
+                    "entity_text": "widespread data theft attacks"
+                },
+                "relation": "caused",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "data leaks",
+                    "mention_class": "Information",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "data leaks"
+                    ],
+                    "entity_text": "data leaks"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": "widespread data theft attacks",
+                    "mention_class": "Event",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks"
+                    ],
+                    "entity_text": "widespread data theft attacks"
+                },
+                "relation": "caused",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "reputational damage",
+                    "mention_class": "Information",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "reputational damage"
+                    ],
+                    "entity_text": "reputational damage"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 20,
+                    "mention_text": "widespread data theft attacks",
+                    "mention_class": "Event",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks",
+                        "widespread data theft attacks"
+                    ],
+                    "entity_text": "widespread data theft attacks"
+                },
+                "relation": "caused",
+                "object": {
+                    "mention_id": 21,
+                    "mention_text": "operational disruptions",
+                    "mention_class": "Event",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "operational disruptions"
+                    ],
+                    "entity_text": "operational disruptions"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 22,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 23,
+                    "mention_text": "Crown Resorts",
+                    "mention_class": "Organization",
+                    "entity_id": 13,
+                    "mentions_merged": [
+                        "Crown Resorts"
+                    ],
+                    "entity_text": "Crown Resorts"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 24,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 25,
+                    "mention_text": "CHS",
+                    "mention_class": "Organization",
+                    "entity_id": 14,
+                    "mentions_merged": [
+                        "CHS"
+                    ],
+                    "entity_text": "CHS"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 26,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 27,
+                    "mention_text": "Hatch Bank",
+                    "mention_class": "Organization",
+                    "entity_id": 15,
+                    "mentions_merged": [
+                        "Hatch Bank"
+                    ],
+                    "entity_text": "Hatch Bank"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 28,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 29,
+                    "mention_text": "Rubrik",
+                    "mention_class": "Organization",
+                    "entity_id": 16,
+                    "mentions_merged": [
+                        "Rubrik"
+                    ],
+                    "entity_text": "Rubrik"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 30,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 31,
+                    "mention_text": "the City of Toronto",
+                    "mention_class": "Organization",
+                    "entity_id": 17,
+                    "mentions_merged": [
+                        "the City of Toronto"
+                    ],
+                    "entity_text": "the City of Toronto"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 32,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 33,
+                    "mention_text": "Hitachi Energy",
+                    "mention_class": "Organization",
+                    "entity_id": 18,
+                    "mentions_merged": [
+                        "Hitachi Energy"
+                    ],
+                    "entity_text": "Hitachi Energy"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 34,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 35,
+                    "mention_text": "Procter & Gamble",
+                    "mention_class": "Organization",
+                    "entity_id": 19,
+                    "mentions_merged": [
+                        "Procter & Gamble"
+                    ],
+                    "entity_text": "Procter & Gamble"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 36,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                },
+                "relation": "attacked",
+                "object": {
+                    "mention_id": 37,
+                    "mention_text": "Saks Fifth Avenue",
+                    "mention_class": "Organization",
+                    "entity_id": 20,
+                    "mentions_merged": [
+                        "Saks Fifth Avenue"
+                    ],
+                    "entity_text": "Saks Fifth Avenue"
+                }
+            }
+        ],
+        "mentions_num": 38,
+        "entity_num": 21
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "entity_id": 8,
+                    "mention_text": "widespread data theft attacks"
+                },
+                "relation": "were conducted by",
+                "object": {
+                    "mention_id": 0,
+                    "mention_text": "Clop ransomware gang",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang",
+                        "Clop ransomware gang"
+                    ],
+                    "entity_text": "Clop ransomware gang"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 0,
+            "mention_text": "Clop ransomware gang",
+            "mention_class": "Attacker",
+            "entity_id": 0,
+            "mentions_merged": [
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang",
+                "Clop ransomware gang"
+            ],
+            "entity_text": "Clop ransomware gang"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 13,
+                "mention_text": "widespread data theft attacks",
+                "mention_class": "Event",
+                "entity_id": 8,
+                "mentions_merged": [
+                    "widespread data theft attacks",
+                    "widespread data theft attacks",
+                    "widespread data theft attacks",
+                    "widespread data theft attacks",
+                    "widespread data theft attacks"
+                ],
+                "entity_text": "widespread data theft attacks"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+            ],
+            [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

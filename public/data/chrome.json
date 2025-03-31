@@ -1,0 +1,393 @@
+{
+    "CTI": {
+        "text": "Google has released security updates to fix the first Chrome zero-day vulnerability exploited in the wild since the start of the year. \u200bThe high-severity zero-day vulnerability (CVE-2024-0519) is due to a high-severity out-of-bounds memory access weakness in the Chrome V8 JavaScript engine, which remote attackers can exploit via a crafted HTML page to gain access to data beyond the memory buffer through heap corruption, providing them access to sensitive information or triggering a crash. Besides unauthorized access to out-of-bounds memory, CVE-2024-0519 could also be exploited to bypass protection mechanisms such as ASLR to make it easier to achieve code execution via another weakness.",
+        "link": "https://www.bleepingcomputer.com/news/security/google-fixes-first-actively-exploited-chrome-zero-day-of-2024/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Google",
+                "relation": "has released security updates to fix",
+                "object": "the first Chrome zero-day vulnerability exploited in the wild since the start of the year"
+            },
+            {
+                "subject": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                "relation": "is due to",
+                "object": "out-of-bounds memory access weakness in the Chrome V8 JavaScript engine"
+            },
+            {
+                "subject": "remote attackers",
+                "relation": "can exploit",
+                "object": "Chrome zero-day vulnerability (CVE-2024-0519)"
+            },
+            {
+                "subject": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                "relation": "is exploited via",
+                "object": "crafted HTML page"
+            },
+            {
+                "subject": "remote attackers",
+                "relation": "may gain",
+                "object": "access to sensitive information"
+            },
+            {
+                "subject": "remote attackers",
+                "relation": "may trigger",
+                "object": "a crash"
+            },
+            {
+                "subject": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                "relation": "could be exploited to bypass",
+                "object": "protection mechanisms such as ASLR"
+            },
+            {
+                "subject": "protection mechanisms such as ASLR",
+                "relation": "make it easier to achieve",
+                "object": "code execution via another weakness"
+            }
+        ],
+        "triples_count": 8
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Google",
+                    "class": "Organization"
+                },
+                "relation": "has released security updates to fix",
+                "object": {
+                    "text": "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "class": "Vulnerability"
+                },
+                "relation": "is due to",
+                "object": {
+                    "text": "out-of-bounds memory access weakness in the Chrome V8 JavaScript engine",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            },
+            {
+                "subject": {
+                    "text": "remote attackers",
+                    "class": "Attacker"
+                },
+                "relation": "can exploit",
+                "object": {
+                    "text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "class": "Vulnerability"
+                },
+                "relation": "is exploited via",
+                "object": {
+                    "text": "crafted HTML page",
+                    "class": "Indicator:File"
+                }
+            },
+            {
+                "subject": {
+                    "text": "remote attackers",
+                    "class": "Attacker"
+                },
+                "relation": "may gain",
+                "object": {
+                    "text": "access to sensitive information",
+                    "class": "Information"
+                }
+            },
+            {
+                "subject": {
+                    "text": "remote attackers",
+                    "class": "Attacker"
+                },
+                "relation": "may trigger",
+                "object": {
+                    "text": "a crash",
+                    "class": "Event"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "class": "Vulnerability"
+                },
+                "relation": "could be exploited to bypass",
+                "object": {
+                    "text": "protection mechanisms such as ASLR",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "protection mechanisms such as ASLR",
+                    "class": "Infrastructure"
+                },
+                "relation": "make it easier to achieve",
+                "object": {
+                    "text": "code execution via another weakness",
+                    "class": "Malware Characteristic:Capability"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Google",
+                    "mention_class": "Organization",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Google"
+                    ],
+                    "entity_text": "Google"
+                },
+                "relation": "has released security updates to fix",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)"
+                    ],
+                    "entity_text": "Chrome zero-day vulnerability (CVE-2024-0519)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)"
+                    ],
+                    "entity_text": "Chrome zero-day vulnerability (CVE-2024-0519)"
+                },
+                "relation": "is due to",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "out-of-bounds memory access weakness in the Chrome V8 JavaScript engine",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "out-of-bounds memory access weakness in the Chrome V8 JavaScript engine"
+                    ],
+                    "entity_text": "out-of-bounds memory access weakness in the Chrome V8 JavaScript engine"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "remote attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "remote attackers",
+                        "remote attackers",
+                        "remote attackers"
+                    ],
+                    "entity_text": "remote attackers"
+                },
+                "relation": "can exploit",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)"
+                    ],
+                    "entity_text": "Chrome zero-day vulnerability (CVE-2024-0519)"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)"
+                    ],
+                    "entity_text": "Chrome zero-day vulnerability (CVE-2024-0519)"
+                },
+                "relation": "is exploited via",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "crafted HTML page",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "crafted HTML page"
+                    ],
+                    "entity_text": "crafted HTML page"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "remote attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "remote attackers",
+                        "remote attackers",
+                        "remote attackers"
+                    ],
+                    "entity_text": "remote attackers"
+                },
+                "relation": "may gain",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "access to sensitive information",
+                    "mention_class": "Information",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "access to sensitive information"
+                    ],
+                    "entity_text": "access to sensitive information"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "remote attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "remote attackers",
+                        "remote attackers",
+                        "remote attackers"
+                    ],
+                    "entity_text": "remote attackers"
+                },
+                "relation": "may trigger",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "a crash",
+                    "mention_class": "Event",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "a crash"
+                    ],
+                    "entity_text": "a crash"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "Chrome zero-day vulnerability (CVE-2024-0519)",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)",
+                        "Chrome zero-day vulnerability (CVE-2024-0519)"
+                    ],
+                    "entity_text": "Chrome zero-day vulnerability (CVE-2024-0519)"
+                },
+                "relation": "could be exploited to bypass",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "protection mechanisms such as ASLR",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "protection mechanisms such as ASLR",
+                        "protection mechanisms such as ASLR"
+                    ],
+                    "entity_text": "protection mechanisms such as ASLR"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "protection mechanisms such as ASLR",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "protection mechanisms such as ASLR",
+                        "protection mechanisms such as ASLR"
+                    ],
+                    "entity_text": "protection mechanisms such as ASLR"
+                },
+                "relation": "make it easier to achieve",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "code execution via another weakness",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "code execution via another weakness"
+                    ],
+                    "entity_text": "code execution via another weakness"
+                }
+            }
+        ],
+        "mentions_num": 16,
+        "entity_num": 9
+    },
+    "LP": {
+        "predicted_links": [],
+        "topic_node": {
+            "mention_id": 1,
+            "mention_text": "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+            "mention_class": "Vulnerability",
+            "entity_id": 1,
+            "mentions_merged": [
+                "the first Chrome zero-day vulnerability exploited in the wild since the start of the year",
+                "Chrome zero-day vulnerability (CVE-2024-0519)",
+                "Chrome zero-day vulnerability (CVE-2024-0519)",
+                "Chrome zero-day vulnerability (CVE-2024-0519)",
+                "Chrome zero-day vulnerability (CVE-2024-0519)"
+            ],
+            "entity_text": "Chrome zero-day vulnerability (CVE-2024-0519)"
+        },
+        "main_nodes": [],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        ],
+        "subgraph_num": 1
+    }
+}

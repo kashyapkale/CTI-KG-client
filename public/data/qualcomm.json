@@ -1,0 +1,610 @@
+{
+    "CTI": {
+        "text": "A new vulnerability dubbed 'LeftoverLocals' affecting graphics processing units from AMD, Apple, Qualcomm, and Imagination Technologies allows retrieving data from the local memory space. Tracked as CVE-2023-4969, the security issue enables data recovery from vulnerable GPUs, especially in the context of large language models (LLMs) and machine learning (ML) processes. LeftoverLocals lets attackers launch a 'listener' - a GPU kernel that reads from uninitialized local memory and can dump the data in a persistent location, such as the global memory. If the local memory is not cleared, the attacker can use the listener to read values left behind by the 'writer' - a program that stores values to local memory. The recovered data can reveal sensitive information about the victim's computations, including model inputs, outputs, weights, and intermediate computations.",
+        "link": "https://www.bleepingcomputer.com/news/security/amd-apple-qualcomm-gpus-leak-ai-data-in-leftoverlocals-attacks/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "LeftoverLocals",
+                "relation": "affects",
+                "object": "graphics processing units"
+            },
+            {
+                "subject": "graphics processing units",
+                "relation": "from",
+                "object": "AMD"
+            },
+            {
+                "subject": "graphics processing units",
+                "relation": "from",
+                "object": "Apple"
+            },
+            {
+                "subject": "graphics processing units",
+                "relation": "from",
+                "object": "Qualcomm"
+            },
+            {
+                "subject": "graphics processing units",
+                "relation": "from",
+                "object": "Imagination Technologies"
+            },
+            {
+                "subject": "LeftoverLocals",
+                "relation": "is tracked as",
+                "object": "CVE-2023-4969"
+            },
+            {
+                "subject": "CVE-2023-4969",
+                "relation": "enables",
+                "object": "data recovery from vulnerable GPUs"
+            },
+            {
+                "subject": "LeftoverLocals",
+                "relation": "lets attackers launch",
+                "object": "a listener"
+            },
+            {
+                "subject": "a listener",
+                "relation": "reads from",
+                "object": "uninitialized local memory"
+            },
+            {
+                "subject": "a listener",
+                "relation": "dumps data into",
+                "object": "global memory"
+            },
+            {
+                "subject": "attacker",
+                "relation": "uses",
+                "object": "a listener"
+            },
+            {
+                "subject": "attacker",
+                "relation": "reads values left by",
+                "object": "the writer"
+            },
+            {
+                "subject": "the writer",
+                "relation": "stores values to",
+                "object": "local memory"
+            }
+        ],
+        "triples_count": 13
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "LeftoverLocals",
+                    "class": "Vulnerability"
+                },
+                "relation": "affects",
+                "object": {
+                    "text": "graphics processing units",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "graphics processing units",
+                    "class": "Infrastructure"
+                },
+                "relation": "from",
+                "object": {
+                    "text": "AMD",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "graphics processing units",
+                    "class": "Infrastructure"
+                },
+                "relation": "from",
+                "object": {
+                    "text": "Apple",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "graphics processing units",
+                    "class": "Infrastructure"
+                },
+                "relation": "from",
+                "object": {
+                    "text": "Qualcomm",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "graphics processing units",
+                    "class": "Infrastructure"
+                },
+                "relation": "from",
+                "object": {
+                    "text": "Imagination Technologies",
+                    "class": "Organization"
+                }
+            },
+            {
+                "subject": {
+                    "text": "LeftoverLocals",
+                    "class": "Vulnerability"
+                },
+                "relation": "is tracked as",
+                "object": {
+                    "text": "CVE-2023-4969",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2023-4969",
+                    "class": "Vulnerability"
+                },
+                "relation": "enables",
+                "object": {
+                    "text": "data recovery from vulnerable GPUs",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "LeftoverLocals",
+                    "class": "Vulnerability"
+                },
+                "relation": "lets attackers launch",
+                "object": {
+                    "text": "a listener",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "a listener",
+                    "class": "Malware"
+                },
+                "relation": "reads from",
+                "object": {
+                    "text": "uninitialized local memory",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "a listener",
+                    "class": "Malware"
+                },
+                "relation": "dumps data into",
+                "object": {
+                    "text": "global memory",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attacker",
+                    "class": "Attacker"
+                },
+                "relation": "uses",
+                "object": {
+                    "text": "a listener",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attacker",
+                    "class": "Attacker"
+                },
+                "relation": "reads values left by",
+                "object": {
+                    "text": "the writer",
+                    "class": "Malware"
+                }
+            },
+            {
+                "subject": {
+                    "text": "the writer",
+                    "class": "Malware"
+                },
+                "relation": "stores values to",
+                "object": {
+                    "text": "local memory",
+                    "class": "Infrastructure"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "LeftoverLocals",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "LeftoverLocals",
+                        "LeftoverLocals",
+                        "LeftoverLocals"
+                    ],
+                    "entity_text": "LeftoverLocals"
+                },
+                "relation": "affects",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "graphics processing units",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units"
+                    ],
+                    "entity_text": "graphics processing units"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "graphics processing units",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units"
+                    ],
+                    "entity_text": "graphics processing units"
+                },
+                "relation": "from",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "AMD",
+                    "mention_class": "Organization",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "AMD"
+                    ],
+                    "entity_text": "AMD"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "graphics processing units",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units"
+                    ],
+                    "entity_text": "graphics processing units"
+                },
+                "relation": "from",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "Apple",
+                    "mention_class": "Organization",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "Apple"
+                    ],
+                    "entity_text": "Apple"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "graphics processing units",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units"
+                    ],
+                    "entity_text": "graphics processing units"
+                },
+                "relation": "from",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "Qualcomm",
+                    "mention_class": "Organization",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "Qualcomm"
+                    ],
+                    "entity_text": "Qualcomm"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "graphics processing units",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units",
+                        "graphics processing units"
+                    ],
+                    "entity_text": "graphics processing units"
+                },
+                "relation": "from",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "Imagination Technologies",
+                    "mention_class": "Organization",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "Imagination Technologies"
+                    ],
+                    "entity_text": "Imagination Technologies"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "LeftoverLocals",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "LeftoverLocals",
+                        "LeftoverLocals",
+                        "LeftoverLocals"
+                    ],
+                    "entity_text": "LeftoverLocals"
+                },
+                "relation": "is tracked as",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "CVE-2023-4969",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "CVE-2023-4969",
+                        "CVE-2023-4969"
+                    ],
+                    "entity_text": "CVE-2023-4969"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "CVE-2023-4969",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "CVE-2023-4969",
+                        "CVE-2023-4969"
+                    ],
+                    "entity_text": "CVE-2023-4969"
+                },
+                "relation": "enables",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "data recovery from vulnerable GPUs",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "data recovery from vulnerable GPUs"
+                    ],
+                    "entity_text": "data recovery from vulnerable GPUs"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "LeftoverLocals",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "LeftoverLocals",
+                        "LeftoverLocals",
+                        "LeftoverLocals"
+                    ],
+                    "entity_text": "LeftoverLocals"
+                },
+                "relation": "lets attackers launch",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "a listener",
+                    "mention_class": "Malware",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "a listener",
+                        "a listener",
+                        "a listener",
+                        "a listener"
+                    ],
+                    "entity_text": "a listener"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": "a listener",
+                    "mention_class": "Malware",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "a listener",
+                        "a listener",
+                        "a listener",
+                        "a listener"
+                    ],
+                    "entity_text": "a listener"
+                },
+                "relation": "reads from",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "uninitialized local memory",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "uninitialized local memory"
+                    ],
+                    "entity_text": "uninitialized local memory"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": "a listener",
+                    "mention_class": "Malware",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "a listener",
+                        "a listener",
+                        "a listener",
+                        "a listener"
+                    ],
+                    "entity_text": "a listener"
+                },
+                "relation": "dumps data into",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "global memory",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "local memory",
+                        "global memory"
+                    ],
+                    "entity_text": "local memory"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 20,
+                    "mention_text": "attacker",
+                    "mention_class": "Attacker",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "attacker",
+                        "attacker"
+                    ],
+                    "entity_text": "attacker"
+                },
+                "relation": "uses",
+                "object": {
+                    "mention_id": 21,
+                    "mention_text": "a listener",
+                    "mention_class": "Malware",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "a listener",
+                        "a listener",
+                        "a listener",
+                        "a listener"
+                    ],
+                    "entity_text": "a listener"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 22,
+                    "mention_text": "attacker",
+                    "mention_class": "Attacker",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "attacker",
+                        "attacker"
+                    ],
+                    "entity_text": "attacker"
+                },
+                "relation": "reads values left by",
+                "object": {
+                    "mention_id": 23,
+                    "mention_text": "the writer",
+                    "mention_class": "Malware",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "the writer",
+                        "the writer"
+                    ],
+                    "entity_text": "the writer"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 24,
+                    "mention_text": "the writer",
+                    "mention_class": "Malware",
+                    "entity_id": 12,
+                    "mentions_merged": [
+                        "the writer",
+                        "the writer"
+                    ],
+                    "entity_text": "the writer"
+                },
+                "relation": "stores values to",
+                "object": {
+                    "mention_id": 25,
+                    "mention_text": "local memory",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "local memory",
+                        "global memory"
+                    ],
+                    "entity_text": "local memory"
+                }
+            }
+        ],
+        "mentions_num": 26,
+        "entity_num": 13
+    },
+    "LP": {
+        "predicted_links": [],
+        "topic_node": {
+            "mention_id": 1,
+            "mention_text": "graphics processing units",
+            "mention_class": "Infrastructure",
+            "entity_id": 1,
+            "mentions_merged": [
+                "graphics processing units",
+                "graphics processing units",
+                "graphics processing units",
+                "graphics processing units",
+                "graphics processing units"
+            ],
+            "entity_text": "graphics processing units"
+        },
+        "main_nodes": [],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                3,
+                11
+            ]
+        ],
+        "subgraph_num": 1
+    }
+}

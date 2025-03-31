@@ -1,0 +1,555 @@
+{
+    "CTI": {
+        "text": "A recently uncovered ransomware operation named 'Kasseika' has joined the club of threat actors that employs Bring Your Own Vulnerable Driver (BYOVD) tactics to disable antivirus software before encrypting files. Kasseika abuses the Martini driver (Martini.sys/viragt64.sys), part of TG Soft's VirtIT Agent System, to disable antivirus products protecting the targeted system. Kasseika attacks start with a phishing email sent to employees of the targeted organization, attempting to steal their account credentials, which will then be used for initial access to the corporate network. Next, Kasseika operators abuse the Windows PsExec tool to execute malicious .bat files on the infected system and others they have accessed through lateral movement. The batch file checks for the presence of a process named 'Martini.exe' and terminates it to avoid interference. Next, it downloads the vulnerable 'Martini.sys' driver on the machine. By using BYOVD attacks, aka exploiting flaws in the loaded driver, the malware gains the privileges to terminate 991 processes from a hardcoded list, many of which correspond to antivirus products, security tools, analysis tools, and system utilities.",
+        "link": "https://www.bleepingcomputer.com/news/security/kasseika-ransomware-uses-antivirus-driver-to-kill-other-antiviruses/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Kasseika",
+                "relation": "employs",
+                "object": "Bring Your Own Vulnerable Driver (BYOVD) tactics"
+            },
+            {
+                "subject": "Kasseika",
+                "relation": "abuses",
+                "object": "Martini driver"
+            },
+            {
+                "subject": "Martini driver",
+                "relation": "is part of",
+                "object": "TG Soft's VirtIT Agent System"
+            },
+            {
+                "subject": "Kasseika attacks",
+                "relation": "start with",
+                "object": "phishing email"
+            },
+            {
+                "subject": "phishing email",
+                "relation": "targets",
+                "object": "employees of the targeted organization"
+            },
+            {
+                "subject": "Kasseika operators",
+                "relation": "abuse",
+                "object": "Windows PsExec tool"
+            },
+            {
+                "subject": "Windows PsExec tool",
+                "relation": "executes",
+                "object": "malicious .bat files"
+            },
+            {
+                "subject": "malicious .bat files",
+                "relation": "terminate",
+                "object": "Martini.exe"
+            },
+            {
+                "subject": "malicious .bat files",
+                "relation": "download",
+                "object": "Martini.sys driver"
+            },
+            {
+                "subject": "Kasseika",
+                "relation": "exploits",
+                "object": "vulnerable Martini.sys driver"
+            },
+            {
+                "subject": "Kasseika",
+                "relation": "gains privileges to terminate",
+                "object": "991 processes"
+            }
+        ],
+        "triples_count": 11
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Kasseika",
+                    "class": "Attacker"
+                },
+                "relation": "employs",
+                "object": {
+                    "text": "Bring Your Own Vulnerable Driver (BYOVD) tactics",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Kasseika",
+                    "class": "Attacker"
+                },
+                "relation": "abuses",
+                "object": {
+                    "text": "Martini driver",
+                    "class": "Tool"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Martini driver",
+                    "class": "Tool"
+                },
+                "relation": "is part of",
+                "object": {
+                    "text": "TG Soft's VirtIT Agent System",
+                    "class": "Tool"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Kasseika attacks",
+                    "class": "Event"
+                },
+                "relation": "start with",
+                "object": {
+                    "text": "phishing email",
+                    "class": "Indicator:Email"
+                }
+            },
+            {
+                "subject": {
+                    "text": "phishing email",
+                    "class": "Indicator:Email"
+                },
+                "relation": "targets",
+                "object": {
+                    "text": "employees of the targeted organization",
+                    "class": "Account"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Kasseika operators",
+                    "class": "Attacker"
+                },
+                "relation": "abuse",
+                "object": {
+                    "text": "Windows PsExec tool",
+                    "class": "Tool"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Windows PsExec tool",
+                    "class": "Tool"
+                },
+                "relation": "executes",
+                "object": {
+                    "text": "malicious .bat files",
+                    "class": "Indicator:File"
+                }
+            },
+            {
+                "subject": {
+                    "text": "malicious .bat files",
+                    "class": "Indicator:File"
+                },
+                "relation": "terminate",
+                "object": {
+                    "text": "Martini.exe",
+                    "class": "Indicator:File"
+                }
+            },
+            {
+                "subject": {
+                    "text": "malicious .bat files",
+                    "class": "Indicator:File"
+                },
+                "relation": "download",
+                "object": {
+                    "text": "Martini.sys driver",
+                    "class": "Indicator:File"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Kasseika",
+                    "class": "Attacker"
+                },
+                "relation": "exploits",
+                "object": {
+                    "text": "vulnerable Martini.sys driver",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Kasseika",
+                    "class": "Attacker"
+                },
+                "relation": "gains privileges to terminate",
+                "object": {
+                    "text": "991 processes",
+                    "class": "Infrastructure"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Kasseika",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Kasseika",
+                        "Kasseika",
+                        "Kasseika operators",
+                        "Kasseika",
+                        "Kasseika"
+                    ],
+                    "entity_text": "Kasseika"
+                },
+                "relation": "employs",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "Bring Your Own Vulnerable Driver (BYOVD) tactics",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Bring Your Own Vulnerable Driver (BYOVD) tactics"
+                    ],
+                    "entity_text": "Bring Your Own Vulnerable Driver (BYOVD) tactics"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "Kasseika",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Kasseika",
+                        "Kasseika",
+                        "Kasseika operators",
+                        "Kasseika",
+                        "Kasseika"
+                    ],
+                    "entity_text": "Kasseika"
+                },
+                "relation": "abuses",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "Martini driver",
+                    "mention_class": "Tool",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "Martini driver",
+                        "Martini driver"
+                    ],
+                    "entity_text": "Martini driver"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "Martini driver",
+                    "mention_class": "Tool",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "Martini driver",
+                        "Martini driver"
+                    ],
+                    "entity_text": "Martini driver"
+                },
+                "relation": "is part of",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "TG Soft's VirtIT Agent System",
+                    "mention_class": "Tool",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "TG Soft's VirtIT Agent System"
+                    ],
+                    "entity_text": "TG Soft's VirtIT Agent System"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "Kasseika attacks",
+                    "mention_class": "Event",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "Kasseika attacks"
+                    ],
+                    "entity_text": "Kasseika attacks"
+                },
+                "relation": "start with",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "phishing email",
+                    "mention_class": "Indicator:Email",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "phishing email",
+                        "phishing email"
+                    ],
+                    "entity_text": "phishing email"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "phishing email",
+                    "mention_class": "Indicator:Email",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "phishing email",
+                        "phishing email"
+                    ],
+                    "entity_text": "phishing email"
+                },
+                "relation": "targets",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "employees of the targeted organization",
+                    "mention_class": "Account",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "employees of the targeted organization"
+                    ],
+                    "entity_text": "employees of the targeted organization"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "Kasseika operators",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Kasseika",
+                        "Kasseika",
+                        "Kasseika operators",
+                        "Kasseika",
+                        "Kasseika"
+                    ],
+                    "entity_text": "Kasseika"
+                },
+                "relation": "abuse",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "Windows PsExec tool",
+                    "mention_class": "Tool",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "Windows PsExec tool",
+                        "Windows PsExec tool"
+                    ],
+                    "entity_text": "Windows PsExec tool"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "Windows PsExec tool",
+                    "mention_class": "Tool",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "Windows PsExec tool",
+                        "Windows PsExec tool"
+                    ],
+                    "entity_text": "Windows PsExec tool"
+                },
+                "relation": "executes",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "malicious .bat files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "malicious .bat files",
+                        "malicious .bat files",
+                        "malicious .bat files"
+                    ],
+                    "entity_text": "malicious .bat files"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "malicious .bat files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "malicious .bat files",
+                        "malicious .bat files",
+                        "malicious .bat files"
+                    ],
+                    "entity_text": "malicious .bat files"
+                },
+                "relation": "terminate",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "Martini.exe",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "Martini.sys driver",
+                        "Martini.exe"
+                    ],
+                    "entity_text": "Martini.exe"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": "malicious .bat files",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "malicious .bat files",
+                        "malicious .bat files",
+                        "malicious .bat files"
+                    ],
+                    "entity_text": "malicious .bat files"
+                },
+                "relation": "download",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "Martini.sys driver",
+                    "mention_class": "Indicator:File",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "Martini.sys driver",
+                        "Martini.exe"
+                    ],
+                    "entity_text": "Martini.exe"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": "Kasseika",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Kasseika",
+                        "Kasseika",
+                        "Kasseika operators",
+                        "Kasseika",
+                        "Kasseika"
+                    ],
+                    "entity_text": "Kasseika"
+                },
+                "relation": "exploits",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "vulnerable Martini.sys driver",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "vulnerable Martini.sys driver"
+                    ],
+                    "entity_text": "vulnerable Martini.sys driver"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 20,
+                    "mention_text": "Kasseika",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Kasseika",
+                        "Kasseika",
+                        "Kasseika operators",
+                        "Kasseika",
+                        "Kasseika"
+                    ],
+                    "entity_text": "Kasseika"
+                },
+                "relation": "gains privileges to terminate",
+                "object": {
+                    "mention_id": 21,
+                    "mention_text": "991 processes",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "991 processes"
+                    ],
+                    "entity_text": "991 processes"
+                }
+            }
+        ],
+        "mentions_num": 22,
+        "entity_num": 12
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "entity_id": 5,
+                    "mention_text": "phishing email"
+                },
+                "relation": "is used by",
+                "object": {
+                    "mention_id": 0,
+                    "mention_text": "Kasseika",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Kasseika",
+                        "Kasseika",
+                        "Kasseika operators",
+                        "Kasseika",
+                        "Kasseika"
+                    ],
+                    "entity_text": "Kasseika"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 0,
+            "mention_text": "Kasseika",
+            "mention_class": "Attacker",
+            "entity_id": 0,
+            "mentions_merged": [
+                "Kasseika",
+                "Kasseika",
+                "Kasseika operators",
+                "Kasseika",
+                "Kasseika"
+            ],
+            "entity_text": "Kasseika"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 7,
+                "mention_text": "phishing email",
+                "mention_class": "Indicator:Email",
+                "entity_id": 5,
+                "mentions_merged": [
+                    "phishing email",
+                    "phishing email"
+                ],
+                "entity_text": "phishing email"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                3,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            [
+                4,
+                5,
+                6
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

@@ -1,0 +1,515 @@
+{
+    "CTI": {
+        "text": "Microsoft warned Friday night that some of its corporate email accounts were breached and data stolen by a Russian state-sponsored hacking group known as Midnight Blizzard. The company detected the attack on January 12th, with Microsoft's investigation ultimately determining that the attack was conducted by Russian threat actors known more commonly as Nobelium or APT29. Microsoft says the threat actors breached their systems in November 2023 when they conducted a password spray attack to access a legacy non-production test tenant account. Microsoft says the breached email accounts included members of Microsoft's leadership team and employees in the cybersecurity and legal departments, from which the hackers stole emails and attachments.",
+        "link": "https://www.bleepingcomputer.com/news/security/russian-hackers-stole-microsoft-corporate-emails-in-month-long-breach/"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "is known as",
+                "object": "Nobelium"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "is known as",
+                "object": "APT29"
+            },
+            {
+                "subject": "Microsoft",
+                "relation": "detected attack on",
+                "object": "January 12th"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "is associated with",
+                "object": "Russia"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "breached",
+                "object": "Microsoft's corporate email accounts"
+            },
+            {
+                "subject": "Midnight Blizzard",
+                "relation": "conducted",
+                "object": "password spray attack"
+            },
+            {
+                "subject": "password spray attack",
+                "relation": "targeted",
+                "object": "legacy non-production test tenant account"
+            },
+            {
+                "subject": "Microsoft's corporate email accounts",
+                "relation": "include",
+                "object": "members of Microsoft's leadership team"
+            },
+            {
+                "subject": "Microsoft's corporate email accounts",
+                "relation": "include",
+                "object": "employees in the cybersecurity department"
+            },
+            {
+                "subject": "Microsoft's corporate email accounts",
+                "relation": "include",
+                "object": "employees in the legal department"
+            }
+        ],
+        "triples_count": 10
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "Midnight Blizzard",
+                    "class": "Attacker"
+                },
+                "relation": "is known as",
+                "object": {
+                    "text": "Nobelium",
+                    "class": "Attacker"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Midnight Blizzard",
+                    "class": "Attacker"
+                },
+                "relation": "is known as",
+                "object": {
+                    "text": "APT29",
+                    "class": "Attacker"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Microsoft",
+                    "class": "Organization"
+                },
+                "relation": "detected attack on",
+                "object": {
+                    "text": "January 12th",
+                    "class": "Time"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Midnight Blizzard",
+                    "class": "Attacker"
+                },
+                "relation": "is associated with",
+                "object": {
+                    "text": "Russia",
+                    "class": "Location"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Midnight Blizzard",
+                    "class": "Attacker"
+                },
+                "relation": "breached",
+                "object": {
+                    "text": "Microsoft's corporate email accounts",
+                    "class": "Infrastructure"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Midnight Blizzard",
+                    "class": "Attacker"
+                },
+                "relation": "conducted",
+                "object": {
+                    "text": "password spray attack",
+                    "class": "Malware Characteristic:Behavior"
+                }
+            },
+            {
+                "subject": {
+                    "text": "password spray attack",
+                    "class": "Malware Characteristic:Behavior"
+                },
+                "relation": "targeted",
+                "object": {
+                    "text": "legacy non-production test tenant account",
+                    "class": "Account"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Microsoft's corporate email accounts",
+                    "class": "Infrastructure"
+                },
+                "relation": "include",
+                "object": {
+                    "text": "members of Microsoft's leadership team",
+                    "class": "Account"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Microsoft's corporate email accounts",
+                    "class": "Infrastructure"
+                },
+                "relation": "include",
+                "object": {
+                    "text": "employees in the cybersecurity department",
+                    "class": "Account"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Microsoft's corporate email accounts",
+                    "class": "Infrastructure"
+                },
+                "relation": "include",
+                "object": {
+                    "text": "employees in the legal department",
+                    "class": "Account"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "Midnight Blizzard",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard"
+                    ],
+                    "entity_text": "Midnight Blizzard"
+                },
+                "relation": "is known as",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "Nobelium",
+                    "mention_class": "Attacker",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "Nobelium"
+                    ],
+                    "entity_text": "Nobelium"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "Midnight Blizzard",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard"
+                    ],
+                    "entity_text": "Midnight Blizzard"
+                },
+                "relation": "is known as",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "APT29",
+                    "mention_class": "Attacker",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "APT29"
+                    ],
+                    "entity_text": "APT29"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "Microsoft",
+                    "mention_class": "Organization",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "Microsoft"
+                    ],
+                    "entity_text": "Microsoft"
+                },
+                "relation": "detected attack on",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "January 12th",
+                    "mention_class": "Time",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "January 12th"
+                    ],
+                    "entity_text": "January 12th"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "Midnight Blizzard",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard"
+                    ],
+                    "entity_text": "Midnight Blizzard"
+                },
+                "relation": "is associated with",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "Russia",
+                    "mention_class": "Location",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "Russia"
+                    ],
+                    "entity_text": "Russia"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "Midnight Blizzard",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard"
+                    ],
+                    "entity_text": "Midnight Blizzard"
+                },
+                "relation": "breached",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "Microsoft's corporate email accounts",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts"
+                    ],
+                    "entity_text": "Microsoft's corporate email accounts"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "Midnight Blizzard",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard"
+                    ],
+                    "entity_text": "Midnight Blizzard"
+                },
+                "relation": "conducted",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "password spray attack",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "password spray attack",
+                        "password spray attack"
+                    ],
+                    "entity_text": "password spray attack"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 12,
+                    "mention_text": "password spray attack",
+                    "mention_class": "Malware Characteristic:Behavior",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "password spray attack",
+                        "password spray attack"
+                    ],
+                    "entity_text": "password spray attack"
+                },
+                "relation": "targeted",
+                "object": {
+                    "mention_id": 13,
+                    "mention_text": "legacy non-production test tenant account",
+                    "mention_class": "Account",
+                    "entity_id": 8,
+                    "mentions_merged": [
+                        "legacy non-production test tenant account"
+                    ],
+                    "entity_text": "legacy non-production test tenant account"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 14,
+                    "mention_text": "Microsoft's corporate email accounts",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts"
+                    ],
+                    "entity_text": "Microsoft's corporate email accounts"
+                },
+                "relation": "include",
+                "object": {
+                    "mention_id": 15,
+                    "mention_text": "members of Microsoft's leadership team",
+                    "mention_class": "Account",
+                    "entity_id": 9,
+                    "mentions_merged": [
+                        "members of Microsoft's leadership team"
+                    ],
+                    "entity_text": "members of Microsoft's leadership team"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 16,
+                    "mention_text": "Microsoft's corporate email accounts",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts"
+                    ],
+                    "entity_text": "Microsoft's corporate email accounts"
+                },
+                "relation": "include",
+                "object": {
+                    "mention_id": 17,
+                    "mention_text": "employees in the cybersecurity department",
+                    "mention_class": "Account",
+                    "entity_id": 10,
+                    "mentions_merged": [
+                        "employees in the cybersecurity department"
+                    ],
+                    "entity_text": "employees in the cybersecurity department"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 18,
+                    "mention_text": "Microsoft's corporate email accounts",
+                    "mention_class": "Infrastructure",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts",
+                        "Microsoft's corporate email accounts"
+                    ],
+                    "entity_text": "Microsoft's corporate email accounts"
+                },
+                "relation": "include",
+                "object": {
+                    "mention_id": 19,
+                    "mention_text": "employees in the legal department",
+                    "mention_class": "Account",
+                    "entity_id": 11,
+                    "mentions_merged": [
+                        "employees in the legal department"
+                    ],
+                    "entity_text": "employees in the legal department"
+                }
+            }
+        ],
+        "mentions_num": 20,
+        "entity_num": 12
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "entity_id": 4,
+                    "mention_text": "January 12th"
+                },
+                "relation": "is the date Microsoft detected attack by",
+                "object": {
+                    "mention_id": 0,
+                    "mention_text": "Midnight Blizzard",
+                    "mention_class": "Attacker",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard",
+                        "Midnight Blizzard"
+                    ],
+                    "entity_text": "Midnight Blizzard"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 0,
+            "mention_text": "Midnight Blizzard",
+            "mention_class": "Attacker",
+            "entity_id": 0,
+            "mentions_merged": [
+                "Midnight Blizzard",
+                "Midnight Blizzard",
+                "Midnight Blizzard",
+                "Midnight Blizzard",
+                "Midnight Blizzard"
+            ],
+            "entity_text": "Midnight Blizzard"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 5,
+                "mention_text": "January 12th",
+                "mention_class": "Time",
+                "entity_id": 4,
+                "mentions_merged": [
+                    "January 12th"
+                ],
+                "entity_text": "January 12th"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+            ],
+            [
+                4,
+                3
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}

@@ -1,0 +1,315 @@
+{
+    "CTI": {
+        "text": "GitHub rotated keys potentially exposed by a vulnerability patched in December that could let attackers access credentials within production containers via environment variables. This unsafe reflection vulnerability (tracked as CVE-2024-0200) can allow attackers to gain remote code execution on unpatched servers. GitHub also fixed a second high-severity Enterprise Server command injection vulnerability (CVE-2024-0507) that would allow attackers using a Management Console user account with an editor role to escalate privileges.",
+        "link": "https://www.bleepingcomputer.com/news/security/github-rotates-keys-to-mitigate-impact-of-credential-exposing-flaw"
+    },
+    "IE": {
+        "triplets": [
+            {
+                "subject": "GitHub",
+                "relation": "rotated keys potentially exposed by",
+                "object": "CVE-2024-0200"
+            },
+            {
+                "subject": "CVE-2024-0200",
+                "relation": "patched in",
+                "object": "December"
+            },
+            {
+                "subject": "attackers",
+                "relation": "could access",
+                "object": "credentials within production containers"
+            },
+            {
+                "subject": "CVE-2024-0200",
+                "relation": "allows",
+                "object": "attackers to gain remote code execution on unpatched servers"
+            },
+            {
+                "subject": "GitHub",
+                "relation": "fixed",
+                "object": "CVE-2024-0507"
+            },
+            {
+                "subject": "CVE-2024-0507",
+                "relation": "allows",
+                "object": "attackers using a Management Console user account with an editor role to escalate privileges"
+            }
+        ],
+        "triples_count": 6
+    },
+    "ET": {
+        "typed_triplets": [
+            {
+                "subject": {
+                    "text": "GitHub",
+                    "class": "Organization"
+                },
+                "relation": "rotated keys potentially exposed by",
+                "object": {
+                    "text": "CVE-2024-0200",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2024-0200",
+                    "class": "Vulnerability"
+                },
+                "relation": "patched in",
+                "object": {
+                    "text": "December",
+                    "class": "Time"
+                }
+            },
+            {
+                "subject": {
+                    "text": "attackers",
+                    "class": "Attacker"
+                },
+                "relation": "could access",
+                "object": {
+                    "text": "credentials within production containers",
+                    "class": "Credential"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2024-0200",
+                    "class": "Vulnerability"
+                },
+                "relation": "allows",
+                "object": {
+                    "text": "attackers to gain remote code execution on unpatched servers",
+                    "class": "Malware Characteristic:Capability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "GitHub",
+                    "class": "Organization"
+                },
+                "relation": "fixed",
+                "object": {
+                    "text": "CVE-2024-0507",
+                    "class": "Vulnerability"
+                }
+            },
+            {
+                "subject": {
+                    "text": "CVE-2024-0507",
+                    "class": "Vulnerability"
+                },
+                "relation": "allows",
+                "object": {
+                    "text": "attackers using a Management Console user account with an editor role to escalate privileges",
+                    "class": "Malware Characteristic:Capability"
+                }
+            }
+        ]
+    },
+    "EM": {
+        "aligned_triplets": [
+            {
+                "subject": {
+                    "mention_id": 0,
+                    "mention_text": "GitHub",
+                    "mention_class": "Organization",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitHub",
+                        "GitHub"
+                    ],
+                    "entity_text": "GitHub"
+                },
+                "relation": "rotated keys potentially exposed by",
+                "object": {
+                    "mention_id": 1,
+                    "mention_text": "CVE-2024-0200",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2024-0200"
+                    ],
+                    "entity_text": "CVE-2024-0200"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 2,
+                    "mention_text": "CVE-2024-0200",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2024-0200"
+                    ],
+                    "entity_text": "CVE-2024-0200"
+                },
+                "relation": "patched in",
+                "object": {
+                    "mention_id": 3,
+                    "mention_text": "December",
+                    "mention_class": "Time",
+                    "entity_id": 2,
+                    "mentions_merged": [
+                        "December"
+                    ],
+                    "entity_text": "December"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 4,
+                    "mention_text": "attackers",
+                    "mention_class": "Attacker",
+                    "entity_id": 3,
+                    "mentions_merged": [
+                        "attackers"
+                    ],
+                    "entity_text": "attackers"
+                },
+                "relation": "could access",
+                "object": {
+                    "mention_id": 5,
+                    "mention_text": "credentials within production containers",
+                    "mention_class": "Credential",
+                    "entity_id": 4,
+                    "mentions_merged": [
+                        "credentials within production containers"
+                    ],
+                    "entity_text": "credentials within production containers"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 6,
+                    "mention_text": "CVE-2024-0200",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2024-0200"
+                    ],
+                    "entity_text": "CVE-2024-0200"
+                },
+                "relation": "allows",
+                "object": {
+                    "mention_id": 7,
+                    "mention_text": "attackers to gain remote code execution on unpatched servers",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 5,
+                    "mentions_merged": [
+                        "attackers to gain remote code execution on unpatched servers"
+                    ],
+                    "entity_text": "attackers to gain remote code execution on unpatched servers"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 8,
+                    "mention_text": "GitHub",
+                    "mention_class": "Organization",
+                    "entity_id": 0,
+                    "mentions_merged": [
+                        "GitHub",
+                        "GitHub"
+                    ],
+                    "entity_text": "GitHub"
+                },
+                "relation": "fixed",
+                "object": {
+                    "mention_id": 9,
+                    "mention_text": "CVE-2024-0507",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "CVE-2024-0507"
+                    ],
+                    "entity_text": "CVE-2024-0507"
+                }
+            },
+            {
+                "subject": {
+                    "mention_id": 10,
+                    "mention_text": "CVE-2024-0507",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 6,
+                    "mentions_merged": [
+                        "CVE-2024-0507"
+                    ],
+                    "entity_text": "CVE-2024-0507"
+                },
+                "relation": "allows",
+                "object": {
+                    "mention_id": 11,
+                    "mention_text": "attackers using a Management Console user account with an editor role to escalate privileges",
+                    "mention_class": "Malware Characteristic:Capability",
+                    "entity_id": 7,
+                    "mentions_merged": [
+                        "attackers using a Management Console user account with an editor role to escalate privileges"
+                    ],
+                    "entity_text": "attackers using a Management Console user account with an editor role to escalate privileges"
+                }
+            }
+        ],
+        "mentions_num": 12,
+        "entity_num": 8
+    },
+    "LP": {
+        "predicted_links": [
+            {
+                "subject": {
+                    "mention_id": 1,
+                    "mention_text": "CVE-2024-0200",
+                    "mention_class": "Vulnerability",
+                    "entity_id": 1,
+                    "mentions_merged": [
+                        "CVE-2024-0200"
+                    ],
+                    "entity_text": "CVE-2024-0200"
+                },
+                "relation": "can expose",
+                "object": {
+                    "entity_id": 4,
+                    "mention_text": "credentials within production containers"
+                }
+            }
+        ],
+        "topic_node": {
+            "mention_id": 1,
+            "mention_text": "CVE-2024-0200",
+            "mention_class": "Vulnerability",
+            "entity_id": 1,
+            "mentions_merged": [
+                "CVE-2024-0200"
+            ],
+            "entity_text": "CVE-2024-0200"
+        },
+        "main_nodes": [
+            {
+                "mention_id": 5,
+                "mention_text": "credentials within production containers",
+                "mention_class": "Credential",
+                "entity_id": 4,
+                "mentions_merged": [
+                    "credentials within production containers"
+                ],
+                "entity_text": "credentials within production containers"
+            }
+        ],
+        "subgraphs": [
+            [
+                0,
+                1,
+                2,
+                5,
+                6,
+                7
+            ],
+            [
+                4,
+                3
+            ]
+        ],
+        "subgraph_num": 2
+    }
+}
