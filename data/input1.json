@@ -1,0 +1,37 @@
+{
+  "IE": {
+    "triplets": [
+      {
+        "subject": "Attackers",
+        "relation": "are exploiting",
+        "object": "CVE-2023-22527"
+      },
+      {
+        "subject": "CVE-2023-22527",
+        "relation": "affects",
+        "object": "Atlassian Confluence servers"
+      },
+      {
+        "subject": "CVE-2023-22527",
+        "relation": "is described as",
+        "object": "a template injection weakness"
+      },
+      {
+        "subject": "Unauthenticated remote attackers",
+        "relation": "can execute",
+        "object": "code on vulnerable Confluence Data Center endpoints"
+      },
+      {
+        "subject": "Unauthenticated remote attackers",
+        "relation": "can execute",
+        "object": "code on vulnerable Confluence Server endpoints"
+      },
+      {
+        "subject": "Attackers",
+        "relation": "are executing",
+        "object": "'whoami' command"
+      }
+    ],
+    "triples_count": 6
+  }
+}
