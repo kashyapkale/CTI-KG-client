@@ -8,9 +8,11 @@ type Props = {
 
 export default function UploadPanel({ onDataLoaded }: Props) {
     const [error, setError] = useState<string | null>(null)
+    const [selectedFiles, setSelectedFiles] = useState<FileList | null>(null)
 
     const handleFiles = async (e: React.ChangeEvent<HTMLInputElement>) => {
         const files = e.target.files
+        setSelectedFiles(files)
         if (!files) return
 
         const parsedFiles: TripletFile[] = []
@@ -35,17 +37,52 @@ export default function UploadPanel({ onDataLoaded }: Props) {
         onDataLoaded(parsedFiles)
     }
 
+    const handleUpload = () => {
+        if (!selectedFiles) return
+        // Trigger file processing again on upload
+        handleFiles({ target: { files: selectedFiles } } as React.ChangeEvent<HTMLInputElement>)
+    }
+
     return (
-        <div className="p-4 border rounded-md bg-white shadow mb-6">
-            <label className="block font-medium mb-2">📁 Upload Triplet JSON Files:</label>
-            <input
-                type="file"
-                multiple
-                accept=".json"
-                onChange={handleFiles}
-                className="file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-blue-600 file:text-white hover:file:bg-blue-700"
-            />
-            {error && <p className="text-red-600 mt-2">{error}</p>}
+        <div className="border border-dashed border-gray-300 rounded-lg p-4 bg-gray-50">
+            {/* Drop Zone */}
+            <div className="flex flex-col items-center justify-center py-10 border border-dashed border-gray-300 rounded bg-white text-center mb-4">
+                <div className="text-3xl mb-2">☁️</div>
+                <p className="text-sm font-medium">Drop files here</p>
+                <p className="text-xs text-gray-500 mb-2">Supported format: JSON</p>
+                <label className="text-sm text-blue-600 cursor-pointer hover:underline">
+                    Browse files
+                    <input
+                        type="file"
+                        multiple
+                        accept=".json"
+                        onChange={handleFiles}
+                        className="hidden"
+                    />
+                </label>
+            </div>
+
+            {error && <p className="text-sm text-red-600 mb-2">{error}</p>}
+
+            {/* Actions */}
+            <div className="flex justify-between gap-2 text-sm">
+                <button
+                    className="flex-1 border border-gray-300 rounded px-3 py-2 hover:bg-gray-100 transition"
+                    onClick={() => {
+                        setSelectedFiles(null)
+                        setError(null)
+                    }}
+                >
+                    Cancel
+                </button>
+                <button
+                    className="flex-1 bg-blue-600 text-white rounded px-3 py-2 hover:bg-blue-700 transition disabled:opacity-50"
+                    onClick={handleUpload}
+                    disabled={!selectedFiles}
+                >
+                    Upload
+                </button>
+            </div>
         </div>
     )
 }
