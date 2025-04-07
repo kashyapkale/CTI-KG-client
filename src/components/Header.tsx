@@ -7,7 +7,7 @@ export default function Header() {
             {/* Left: Logo + Title */}
             <div className="flex items-center gap-4">
                 {/* Placeholder Logo */}
-                <div className="text-xl font-bold text-blue-600">🔗 Logo</div>
+                <div className="text-xl font-bold text-blue-600">🔗</div>
                 <h1 className="text-lg font-semibold text-gray-800">
                     Cyber Threat Intelligence – Knowledge Graph
                 </h1>
