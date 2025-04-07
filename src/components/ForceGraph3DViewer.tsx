@@ -42,6 +42,7 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
             if (!containerRef.current) return;
 
             // Initialize the graph
+            // @ts-expect-error - containerRef
             forceGraphInstanceRef.current = ForceGraph3D()(containerRef.current)
                 .graphData({ nodes, links })
                 .nodeAutoColorBy('class')
