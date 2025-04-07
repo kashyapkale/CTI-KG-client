@@ -1,15 +1,13 @@
-/* eslint-disable */
 'use client'
 import React from 'react'
 import UploadPanel from './UploadPanel'
+import type { TripletFile } from '@/types' // ✅ make sure this is correct path
 
 type Props = {
-    onUpload: (files: never[]) => void
+    onUpload: (files: TripletFile[]) => void
 }
 
-// @ts-expect-error - Err
 export default function Sidebar({ onUpload }: Props) {
-    // @ts-expect-error – unsupported type from library
     return (
         <aside className="w-72 min-h-screen bg-white border-r p-4 flex flex-col justify-between">
             <div>
@@ -34,14 +32,14 @@ export default function Sidebar({ onUpload }: Props) {
                     </ul>
                 </nav>
 
-                {/* Upload Panel (reuses your working component) */}
+                {/* Upload Panel */}
                 <div>
                     <h3 className="text-sm font-semibold mb-2">Upload files</h3>
                     <UploadPanel onDataLoaded={onUpload} />
                 </div>
             </div>
 
-            {/* Invite Button (static placeholder) */}
+            {/* Invite Button */}
             <div className="mt-6">
                 <button className="text-sm w-full border border-gray-300 rounded px-3 py-2 hover:bg-gray-50 transition">
                     + Invite
