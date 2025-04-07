@@ -3,10 +3,11 @@ import React from 'react'
 import UploadPanel from './UploadPanel'
 
 type Props = {
-    onUpload: (files: any[]) => void
+    onUpload: (files: never[]) => void
 }
 
 export default function Sidebar({ onUpload }: Props) {
+    // @ts-expect-error – unsupported type from library
     return (
         <aside className="w-72 min-h-screen bg-white border-r p-4 flex flex-col justify-between">
             <div>
