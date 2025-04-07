@@ -30,7 +30,6 @@ export type GraphViewerRef = {
 export type Props = {
     nodes: Node[];
     links: Link[];
-    // New optional prop to specify which node should be in focus
     focusNodeId?: string;
 };
 
@@ -41,6 +40,7 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
 
         useEffect(() => {
             if (!containerRef.current) return;
+
             // Initialize the graph
             forceGraphInstanceRef.current = ForceGraph3D()(containerRef.current)
                 .graphData({ nodes, links })
@@ -56,6 +56,25 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
                     sprite.textHeight = 6;
                     return sprite;
                 });
+
+            // Add onNodeClick event listener to focus on clicked node
+            // @ts-expect-error
+            forceGraphInstanceRef.current.onNodeClick((node: Node) => {
+                if (!node) return;
+                const distance = 120;
+                const distRatio =
+                    1 + distance / Math.hypot(node.x ?? 0, node.y ?? 0, node.z ?? 0);
+
+                forceGraphInstanceRef.current?.cameraPosition(
+                    {
+                        x: (node.x ?? 0) * distRatio,
+                        y: (node.y ?? 0) * distRatio,
+                        z: (node.z ?? 0) * distRatio,
+                    },
+                    { x: node.x ?? 0, y: node.y ?? 0, z: node.z ?? 0 },
+                    3000
+                );
+            });
         }, [nodes, links]);
 
         // Expose imperative handle if needed
