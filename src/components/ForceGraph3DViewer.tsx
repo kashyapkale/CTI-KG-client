@@ -58,7 +58,7 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
                 });
 
             // Add onNodeClick event listener to focus on clicked node
-            // @ts-expect-error
+            // @ts-expect-error – unsupported type from library
             forceGraphInstanceRef.current.onNodeClick((node: Node) => {
                 if (!node) return;
                 const distance = 120;
