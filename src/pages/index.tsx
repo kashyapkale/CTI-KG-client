@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import Head from 'next/head';
 import Header from '@/components/Header';
 import Sidebar from '@/components/Sidebar';
-import QueryBar from '@/components/QueryBar';
 import { TripletFile } from '@/types';
 import { convertTripletsToGraphData } from '@/lib/convertToGraph3D';
 import type { GraphViewerRef } from '@/components/ForceGraph3DViewer';
@@ -13,15 +12,17 @@ import ForceGraph3DViewerWithRef from '@/components/ForceGraph3DViewerWithRef';
 export default function HomePage() {
     const [nodes, setNodes] = useState<{ id: string; class: string }[]>([]);
     const [links, setLinks] = useState<{ source: string; target: string; label: string }[]>([]);
+
+    // Store the original data (so we can restore it)
+    const [originalNodes, setOriginalNodes] = useState<{ id: string; class: string }[]>([]);
+    const [originalLinks, setOriginalLinks] = useState<{ source: string; target: string; label: string }[]>([]);
+
     const [readyToRender, setReadyToRender] = useState(false);
     const [focusNodeId, setFocusNodeId] = useState<string | undefined>(undefined);
     const graphRef = useRef<GraphViewerRef>(null);
 
-    // Simulate a short delay before rendering (if needed)
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setReadyToRender(true);
-        }, 0);
+        const timer = setTimeout(() => setReadyToRender(true), 0);
         return () => clearTimeout(timer);
     }, []);
 
@@ -63,6 +64,10 @@ export default function HomePage() {
                 const graph = convertTripletsToGraphData(allTriplets);
                 setNodes(graph.nodes);
                 setLinks(graph.links);
+
+                // Also store as original
+                setOriginalNodes(graph.nodes);
+                setOriginalLinks(graph.links);
             } catch (err) {
                 console.error('Failed to load index.json or initial graph:', err);
             }
@@ -87,8 +92,7 @@ export default function HomePage() {
             ...newGraph.links.filter(
                 (l) =>
                     !links.find(
-                        (x) =>
-                            x.source === l.source && x.target === l.target && x.label === l.label
+                        (x) => x.source === l.source && x.target === l.target && x.label === l.label
                     )
             ),
         ];
@@ -106,13 +110,17 @@ export default function HomePage() {
         const results = fuse.search(query);
         if (results.length > 0) {
             const matchedId = results[0].item.id;
-            // Instead of calling focusOnNode imperatively,
-            // we update the state so that the graph component
-            // re-renders (or reacts) and focuses on the matched node.
             setFocusNodeId(matchedId);
         } else {
             alert('No match found for: ' + query);
         }
+    };
+
+    // 🔥 The function to reset the graph to its original data
+    const handleHomeClick = () => {
+        setNodes(originalNodes);
+        setLinks(originalLinks);
+        setFocusNodeId(undefined);
     };
 
     if (!readyToRender) {
@@ -125,10 +133,11 @@ export default function HomePage() {
                 <title>CTI Knowledge Graph</title>
             </Head>
 
-            <Header />
+            <Header onSearch={handleSearch} />
 
             <div className="flex h-[calc(100vh-64px)] overflow-hidden">
-                <Sidebar onUpload={handleDataLoad} />
+                {/* Pass the handleHomeClick to the Sidebar */}
+                <Sidebar onUpload={handleDataLoad} onHomeClick={handleHomeClick} />
 
                 <div className="flex-1 flex flex-col bg-gray-100 overflow-y-auto">
                     <div className="flex justify-center p-8">
@@ -144,10 +153,6 @@ export default function HomePage() {
                                 </div>
                             )}
                         </div>
-                    </div>
-
-                    <div className="flex justify-center mb-10">
-                        <QueryBar onSearch={handleSearch} />
                     </div>
                 </div>
             </div>
