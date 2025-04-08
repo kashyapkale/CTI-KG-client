@@ -8,7 +8,7 @@ import {
 } from 'react';
 import ForceGraph3D, { ForceGraph3DInstance } from '3d-force-graph';
 import SpriteText from 'three-spritetext';
-// @ts-ignore
+//@ts-expect-error - Null P
 import * as THREE from 'three';
 
 type Node = {
@@ -75,6 +75,7 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
                     const label = new SpriteText(node.id);
                     label.color = 'white';
                     label.textHeight = 6;
+                    //@ts-expect-error - Null P
                     label.position.y = 5;
 
                     group.add(sphere);
@@ -84,7 +85,7 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
                 });
 
             // 👇 Make canvas background transparent to show the galaxy
-            // @ts-ignore
+            //@ts-expect-error - Null P
             const renderer = forceGraphInstanceRef.current.renderer();
             renderer.setClearColor(0x000000, 0);
             renderer.domElement.style.background = 'transparent';
@@ -97,13 +98,15 @@ const ForceGraph3DViewer = forwardRef<GraphViewerRef, Props>(
             });
 
             // Auto rotate
-            // @ts-ignore
+            //@ts-expect-error - Null P
             const controls = forceGraphInstanceRef.current.controls();
+            //@ts-expect-error - Null P
             controls.autoRotate = true;
+            //@ts-expect-error - Null P
             controls.autoRotateSpeed = 1.5;
 
             // Lighting
-            // @ts-ignore
+            // @ts-expect-error - Null P
             const scene = forceGraphInstanceRef.current.scene();
             scene.add(new THREE.AmbientLight(0xffffff, 0.5));
             const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
